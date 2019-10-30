@@ -21,12 +21,14 @@
     
     
     <meta name="keywords" content="">
-    <meta property="og:type" content="article">
+    <meta name="description" content="本博客一直在使用indigo作为我们的模板. 但是现在发现了一个问题: 正文的宽度太小了, 有时候无法看全代码!发现indigo的GitHub上面也有人问了同样的问题: 地址. 我给了一个比较不完美的解决方法:  我也有这个问题, 我把hexo-theme-indigo&#x2F;layout&#x2F;page.ejs和hexo-theme-indigo&#x2F;layout&#x2F;post.ejs中的``标签加上了style=">
+<meta property="og:type" content="article">
 <meta property="og:title" content="修改Indigo文章页面宽度">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;30&#x2F;%E4%BF%AE%E6%94%B9Indigo%E6%96%87%E7%AB%A0%E9%A1%B5%E9%9D%A2%E5%AE%BD%E5%BA%A6&#x2F;index.html">
 <meta property="og:site_name" content="lucerm学习历程">
+<meta property="og:description" content="本博客一直在使用indigo作为我们的模板. 但是现在发现了一个问题: 正文的宽度太小了, 有时候无法看全代码!发现indigo的GitHub上面也有人问了同样的问题: 地址. 我给了一个比较不完美的解决方法:  我也有这个问题, 我把hexo-theme-indigo&#x2F;layout&#x2F;page.ejs和hexo-theme-indigo&#x2F;layout&#x2F;post.ejs中的``标签加上了style=">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-30T12:48:50.116Z">
+<meta property="og:updated_time" content="2019-10-30T12:51:27.086Z">
 <meta name="twitter:card" content="summary">
     
     <link rel="shortcut icon" href="/favicon.ico">
@@ -162,6 +164,13 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#本博客一直在使用indigo作为我们的模板-但是现在发现了一个问题-正文的宽度太小了-有时候无法看全代码"><span class="post-toc-number">1.</span> <span class="post-toc-text">本博客一直在使用indigo作为我们的模板. 但是现在发现了一个问题: 正文的宽度太小了, 有时候无法看全代码!</span></a></li></ol>
+        </nav>
+    </aside>
+
 
 <article id="post-修改Indigo文章页面宽度"
   class="post-article article-type-post fade" itemprop="blogPost">
@@ -182,7 +191,16 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            
+            <h1 id="本博客一直在使用indigo作为我们的模板-但是现在发现了一个问题-正文的宽度太小了-有时候无法看全代码"><a href="#本博客一直在使用indigo作为我们的模板-但是现在发现了一个问题-正文的宽度太小了-有时候无法看全代码" class="headerlink" title="本博客一直在使用indigo作为我们的模板. 但是现在发现了一个问题: 正文的宽度太小了, 有时候无法看全代码!"></a>本博客一直在使用indigo作为我们的模板. 但是现在发现了一个问题: 正文的宽度太小了, 有时候无法看全代码!</h1><p>发现indigo的GitHub上面也有人问了同样的问题: <a href="https://github.com/yscoder/hexo-theme-indigo/issues/279" target="_blank" rel="noopener">地址</a>.</p>
+<p>我给了一个比较不完美的解决方法:</p>
+<blockquote>
+<p>我也有这个问题, 我把<code>hexo-theme-indigo/layout/page.ejs</code>和<code>hexo-theme-indigo/layout/post.ejs</code>中的``标签加上了<code>style=&quot;width: 1000px;&quot;</code>, 但是这样的话, 手机上看就会不能自适应…</p>
+</blockquote>
+<p>可能把帖子顶起来了, 有人在下面贴出了完美的解决方法:</p>
+<p>(1) 把<code>hexo-theme-indigo/source/css/_partial/variable.less</code>中的<code>@contentWidth: 960px;</code>改成<code>@contentWidth: 90%;</code>, 当然这个大小是自己可调的, 我调成了80%(效果就是本页面显示的样子).</p>
+<p>(2) 修改config文件, 将<code>cdn</code>设置为<code>false</code>, 关闭CDN加速.</p>
+<p>(3) 执行<code>hexo clean</code>命令清空缓存, 再去执行<code>hexo g</code>重新构建发布.</p>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -190,7 +208,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-10-30T12:48:50.116Z" itemprop="dateUpdated">2019-10-30 20:48:50</time>
+    最后更新时间：<time datetime="2019-10-30T12:51:27.086Z" itemprop="dateUpdated">2019-10-30 20:51:27</time>
 </span><br>
 
 
