@@ -57,6 +57,29 @@
 <p><img src="/images/1228928-20171210182333536-1195927792-1572422355814.png" alt="img"></p>
 <p>　　注意，在回车之后，可能会出现一行WARN的警告语句，不用管它，什么都不要按，等着。。。过一段时间如果出现hexo版本号之类的语句就代表差不多了。</p>
 <p>　　然后输入<strong>npm install hexo –save</strong>这个时候你会看到命令行出现了一堆白字，紧接着输入<strong>hexo v</strong>查看是否安装成功</p>
+<p><img src="../images/1228928-20171210183151240-99873930.png" alt="img"></p>
+<p>如果有问题可以输入 <code>rm -rf *</code></p>
+<h2 id="3-2-初始化hexo"><a href="#3-2-初始化hexo" class="headerlink" title="3.2 初始化hexo"></a><strong>3.2 初始化hexo</strong></h2><p> 继续输入<strong>hexo init</strong>实现初始化 </p>
+<p><img src="../images/1228928-20171210183456005-32633990.png" alt="img"></p>
+<p> 下载好了，再输入<strong>hexo s</strong> </p>
+<p><img src="../images/1228928-20171210183535708-1122679544.png" alt="img"></p>
+<p> 　这时候我们就可以打开浏览器了，在地址栏中输入<a href="http://localhost:4000/，我们就可以看到如下图的界面，，我们的博客建成功啦！！！" target="_blank" rel="noopener">http://localhost:4000/，我们就可以看到如下图的界面，，我们的博客建成功啦！！！</a> <img src="../images/1228928-20171210184948630-1789119677.png" alt="img"></p>
+<p> 我们可以去看一下我们的源码的位置，就在之前新建的那个文件夹里，在source-&gt;_posts文件夹下，有一篇helloworld的初始化文章，如果想要添加新的文章，可以在命令行输入hexo new ‘filename’,就会生成一个新的.md文件，对它编辑就可以了。 </p>
+<h2 id="3-3-上传项目"><a href="#3-3-上传项目" class="headerlink" title="3.3 上传项目"></a><strong>3.3 上传项目</strong></h2><p>　先打开配置文档_config.yml，对它做如下修改，repository后面的内容是 <strong><a href="mailto:git@gitbub.com" target="_blank" rel="noopener">git@gitbub.com</a>:username/库地址</strong> 的形式</p>
+<p>　　注意：type、repository、branch冒号的后面都有一个空格</p>
+<p><img src="../images/1228928-20171210192358427-1680463018.png" alt="img"></p>
+<p>部署好之后，我们就可以上传我们的代码咯</p>
+<p>　　回到命令行窗口，输入<strong>npm install hexo-deployer-git –save,</strong></p>
+<p>　　再输入<strong>hexo g，</strong>然后再<strong>hexo d</strong>，就可以将我们public里面的代码上传咯，在GitHub上可以看到我们上传的代码。这样别人也可以通过域名访问我们博客了。在地址栏输入http://域名就可以访问。</p>
+<h2 id="4-更改主题"><a href="#4-更改主题" class="headerlink" title="4. 更改主题"></a><strong>4. 更改主题</strong></h2><p> 在hexo官网上下载自己喜欢的theme，点击图片可以预览主题，点击图片下面的文字就可以打开下载链接， </p>
+<p><img src="../images/1228928-20171210185231005-181364419.png" alt="img"></p>
+<p><img src="../images/1228928-20171210185450849-1458855632.png" alt="img"></p>
+<p> 复制源码的url，在git hash 命令窗口下载主题，输入<strong>git clone url</strong>，注意得手动粘贴，Ctrl+v无效， </p>
+<p> 　接着，将配置文件中的theme改为新的主题的名字，记住一定要将下载下来的文件夹放到themes文件夹里！ </p>
+<p><img src="../images/1228928-20171210193756974-743203692.jpg" alt="img"></p>
+<p>#网上资源结合自身情况</p>
+<p>#美化那些后面继续写</p>
+<p>#</p>
 ]]></content>
       <categories>
         <category>网站</category>
