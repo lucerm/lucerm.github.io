@@ -45,6 +45,14 @@
 <p><img src="/images/1228928-20171210164556943-1814058239.png" alt="img"></p>
 <p> 　如果在这里不可以操作git，说明在安装时没有更改路径，设置为windows环境下也可以操作，不过没有关系，只需要将git的安装路径添加到环境变量中就可以在windows下操作，或者我们可以运行git bash，在这里查看git的版本号（安装git之后一定会生成git bash）， </p>
 <p><img src="/images/1228928-20171210165330443-675669731.png" alt="img"></p>
+ <a id="more"></a> 
+
+
+
+
+
+
+
 <h2 id="2-2-SSH授权"><a href="#2-2-SSH授权" class="headerlink" title="2.2 SSH授权"></a><strong>2.2 SSH授权</strong></h2><p> 打开git bash，输入ssh-keygen -t rsa, 接着回车三下 </p>
 <p><img src="/images/1228928-20171210170029599-1633314112.png" alt="img"></p>
 <p> 这样就会在C盘用户目录下生成id_rsa和id_rsa.pub这两个文件，前者是密钥，后者是公钥，用记事本打开id_rsa.pub，复制其中的全部内容，添加到GitHub上，这样本地的id_rsa密钥就可以和GitHub上的id_rsa.pub公钥进行配对，授权成功。 </p>
@@ -56,7 +64,7 @@
 <p><img src="/images/1228928-20171210182333536-1195927792-1572422355814.png" alt="img"></p>
 <p>　　注意，在回车之后，可能会出现一行WARN的警告语句，不用管它，什么都不要按，等着。。。过一段时间如果出现hexo版本号之类的语句就代表差不多了。</p>
 <p>　　然后输入<strong>npm install hexo –save</strong>这个时候你会看到命令行出现了一堆白字，紧接着输入<strong>hexo v</strong>查看是否安装成功</p>
- <a id="more"></a> </body></html>]]></content>
+ <!-- more --> </body></html>]]></content>
       <categories>
         <category>网站</category>
       </categories>
