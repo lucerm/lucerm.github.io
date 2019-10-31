@@ -4,9 +4,8 @@
     <title>hexo博客怎么写</title>
     <url>/2019/10/31/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h1 id="直接来这复制上面的头部文件"><a href="#直接来这复制上面的头部文件" class="headerlink" title="****直接来这复制上面的头部文件****"></a><strong>****</strong>直接来这复制上面的头部文件****</h1><h1 id="hexo博客有什么？"><a href="#hexo博客有什么？" class="headerlink" title="**hexo博客有什么？****"></a><strong><strong><strong>**</strong></strong></strong>hexo博客有什么？<strong>****</strong></h1><p><code>注意事项：编写标签分类等不要在typora</code></p>
-<p>1、首页  ： 这个不需要设置</p>
-<a id="more"></a>
-<p>2、关于： 本人或博客相关的介绍</p>
+<p>1、首页  ： 这个不需要设置<br>断页</p>
+<h4 id="“”"><a href="#“”" class="headerlink" title="//“”"></a>//“<a id="more"></a>”</h4><p>2、关于： 本人或博客相关的介绍</p>
 <p>3、标签： 标签<code>tages</code>记得换行并加<code>-</code></p>
 <p>4、分类： 分类categories</p>
 ]]></content>
@@ -42,8 +41,7 @@
   <entry>
     <title>GitHub搭建hexo博客</title>
     <url>/2019/10/30/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="1-首先，得在GitHub上有个自己的仓库"><a href="#1-首先，得在GitHub上有个自己的仓库" class="headerlink" title="1.首先，得在GitHub上有个自己的仓库"></a><strong>1.首先，得在GitHub上有个自己的仓库</strong></h1><p>这个默认都有点了，没有的百度网上很多教程如何创建GitHub，并创建GitHub.io库</p>
-<a id="more"></a>
+    <content><![CDATA[<h1 id="1-首先，得在GitHub上有个自己的仓库"><a href="#1-首先，得在GitHub上有个自己的仓库" class="headerlink" title="1.首先，得在GitHub上有个自己的仓库"></a><strong>1.首先，得在GitHub上有个自己的仓库</strong></h1><p>这个默认都有点了，没有的百度网上很多教程如何创建GitHub，并创建GitHub.io库</p><a id="more"></a>
 <h1 id="2-环境搭建"><a href="#2-环境搭建" class="headerlink" title="2.环境搭建"></a>2.环境搭建</h1><h2 id="2-1-首先，我们需要下载node-js和git-安装基本上就是默认安装即可。"><a href="#2-1-首先，我们需要下载node-js和git-安装基本上就是默认安装即可。" class="headerlink" title="　2.1 首先，我们需要下载node.js和git.安装基本上就是默认安装即可。"></a>　<strong>2.1 首先，我们需要下载<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js</a>和<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>.安装基本上就是默认安装即可。</strong></h2><p> 安装，完成之后，打开命令窗口（Win+R，输入CMD，回车），分别输入node -v, npm -v, git -version, 如果都能像下图一样返回版本号就说明安装好了。 </p>
 <p><img src="/images/1228928-20171210164556943-1814058239.png" alt="img"></p>
 <p> 　如果在这里不可以操作git，说明在安装时没有更改路径，设置为windows环境下也可以操作，不过没有关系，只需要将git的安装路径添加到环境变量中就可以在windows下操作，或者我们可以运行git bash，在这里查看git的版本号（安装git之后一定会生成git bash）， </p>
