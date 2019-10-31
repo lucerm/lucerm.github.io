@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo博客模板</title>
+    <title>hexo博客怎么写</title>
     <url>/2019/10/31/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="直接来这复制上面的头部文件"><a href="#直接来这复制上面的头部文件" class="headerlink" title="****直接来这复制上面的头部文件****"></a><strong>****</strong>直接来这复制上面的头部文件****</h1><h1 id="hexo博客有什么？"><a href="#hexo博客有什么？" class="headerlink" title="**hexo博客有什么？****"></a><strong><strong><strong>**</strong></strong></strong>hexo博客有什么？<strong>****</strong></h1><p><code>注意事项：编写标签分类等不要在typora</code></p><p>1、首页  ： 这个不需要设置</p><p>2、关于： 本人或博客相关的介绍</p><p>3、标签： 标签<code>tages</code>记得换行并加<code>-</code></p><a id="more"></a>
+
+
+
+<p>4、分类： 分类categories</p>
+]]></content>
       <categories>
         <category>模板</category>
       </categories>
       <tags>
-        <tag>模板</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -25,11 +30,11 @@
 <p>(3) 执行<code>hexo clean</code>命令清空缓存, 再去执行<code>hexo g</code>重新构建发布.</p>
 ]]></content>
       <categories>
-        <category>修改错误</category>
+        <category>解决问题</category>
       </categories>
       <tags>
         <tag>Github</tag>
-        <tag>博客</tag>
+        <tag>问题</tag>
       </tags>
   </entry>
   <entry>
@@ -53,10 +58,12 @@
 <p>　　然后输入<strong>npm install hexo –save</strong>这个时候你会看到命令行出现了一堆白字，紧接着输入<strong>hexo v</strong>查看是否安装成功</p>
 ]]></content>
       <categories>
+        <category>网站</category>
         <category>学习</category>
       </categories>
       <tags>
         <tag>Github</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
 </search>
