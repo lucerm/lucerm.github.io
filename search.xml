@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>蓝桥杯嵌入式——串口调试</title>
+    <url>/2019/11/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E2%80%94%E2%80%94%E4%B8%B2%E5%8F%A3%E8%B0%83%E8%AF%95/</url>
+    <content><![CDATA[<h1 id="串口的配置"><a href="#串口的配置" class="headerlink" title="串口的配置"></a>串口的配置</h1><p>思路：</p><h2 id="串口1"><a href="#串口1" class="headerlink" title="串口1"></a>串口1</h2><ul>
+<li><p>文件名称：UART1 - 数据发送 实验</p>
+</li>
+<li><p>实验目的：1.掌握串口通讯基本原理</p>
+</li>
+<li><p>2.掌握STM32处理器串口的配置和使用方法</p>
+</li>
+<li><p>程序说明：1.使用程序前，确认UART1引脚PA9 PA10已经通过跳线正确连接。</p>
+</li>
+<li><p>2.使用串口线连接CN6 到电脑 </p>
+</li>
+<li><p>3.程序中设定串口通讯波特率为9600，使用串口调试工具观察串口输出信息</p>
+</li>
+<li><p>现象：串口打印 Welcome to NUAA         </p>
+</li>
+<li><p>日期版本：2015-NUAA</p>
+</li>
+</ul><a id="more"></a>
+
+<h2 id="串口2"><a href="#串口2" class="headerlink" title="串口2"></a>串口2</h2><ul>
+<li>文件名称：UART2 - 数据发送 实验</li>
+<li>实验目的：1.掌握串口通讯基本原理</li>
+<li>2.掌握STM32处理器串口的配置和使用方法</li>
+<li>程序说明：1.使用程序前，确认UART2引脚PA2 PA3已经通过跳线正确连接。</li>
+<li>2.串口2 默认连接下载串口，下载线可充当串口线，不需要额外连接串口线 </li>
+<li>3.程序中设定串口通讯波特率为9600，使用串口调试工具观察串口输出信息</li>
+<li>现象：串口打印 Welcome to NUAA         </li>
+<li>日期版本：2015-NUAA</li>
+</ul>
+<p>  首先看一下蓝桥杯嵌入式开发板的电路原理图，找到连接串口的引脚。 </p>
+<p>  <img src="../images/%E4%B8%B2%E5%8F%A31%E5%BC%95%E8%84%9A.png" alt="串口1引脚"></p>
+<pre><code>很明显，我们能够看到他有两个串口，一个是串口1(PA9,PA10)，一个是串口2(PA2,PA3),TX为发送端，RX为接收端。不过，我们的蓝桥杯嵌入式开发板并不能直接使用串口1，虽然确实有串口1的电路，但是它连接的确实RS232的9针串口上，也就是说，我们不能直接通过USB去使用到这串口，因此我们一般都用不了这个串口。那么我们一般使用的串口就是串口2了，我们可以直接通过usb下载线去使用这个串口。</code></pre><p>​    </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">USART2_Init</span><span class="params">(u32 bound)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">        GPIO_InitTypeDef GPIO_InitStructure;</span><br><span class="line">        USART_InitTypeDef USART_InitStructure;</span><br><span class="line">        NVIC_InitTypeDef NVIC_InitStructure;</span><br><span class="line">        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE); <span class="comment">//使能PA时钟</span></span><br><span class="line">        RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);<span class="comment">//使能串口2时钟</span></span><br><span class="line">        NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn; <span class="comment">//开启串口2中断</span></span><br><span class="line">        NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = <span class="number">0</span>; <span class="comment">//抢占优先级为最高</span></span><br><span class="line">        NVIC_InitStructure.NVIC_IRQChannelSubPriority = <span class="number">0</span>;   <span class="comment">//响应优先级为最高</span></span><br><span class="line">        NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;  <span class="comment">//使能中断</span></span><br><span class="line">        NVIC_Init(&amp;NVIC_InitStructure);</span><br><span class="line"></span><br><span class="line">        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;  </span><br><span class="line">        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;</span><br><span class="line">        GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;</span><br><span class="line">        GPIO_Init(GPIOA, &amp;GPIO_InitStructure);<span class="comment">//PA2为发送引脚，因此要配置成复用输出模式</span></span><br><span class="line"></span><br><span class="line">        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;</span><br><span class="line">        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;</span><br><span class="line">        GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;</span><br><span class="line">        GPIO_Init(GPIOA, &amp;GPIO_InitStructure);<span class="comment">//PA3为接收引脚，因此要配置成浮空输入模式</span></span><br><span class="line"></span><br><span class="line">        USART_InitStructure.USART_BaudRate = bound; <span class="comment">//波特率</span></span><br><span class="line">        USART_InitStructure.USART_WordLength = USART_WordLength_8b; <span class="comment">//8位数据位</span></span><br><span class="line">        USART_InitStructure.USART_StopBits = USART_StopBits_1; <span class="comment">//1位停止位</span></span><br><span class="line">        USART_InitStructure.USART_Parity = USART_Parity_No; <span class="comment">//无奇偶校验位</span></span><br><span class="line">        USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;  <span class="comment">//使能发送接收</span></span><br><span class="line">        USART_InitStructure.USART_HardwareFlowControl=USART_HardwareFlowControl_None; </span><br><span class="line">        USART_Init(USART2,&amp;USART_InitStructure);        <span class="comment">//不使能硬件流控制</span></span><br><span class="line"></span><br><span class="line">        USART_Cmd(USART2,ENABLE);   <span class="comment">//使能串口2</span></span><br><span class="line">        USART_ITConfig(USART2, USART_IT_RXNE, ENABLE);   <span class="comment">//使能接收中断</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>记录学习</category>
+        <category>经验分享</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub+hexo博客</title>
+    <url>/2019/11/01/GitHub-hexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>教程技术</category>
+        <category>记录学习</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo博客怎么写</title>
     <url>/2019/10/31/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h1 id="直接来这复制上面的头部文件"><a href="#直接来这复制上面的头部文件" class="headerlink" title="****直接来这复制上面的头部文件****"></a><strong>****</strong>直接来这复制上面的头部文件****</h1><h1 id="hexo博客有什么？"><a href="#hexo博客有什么？" class="headerlink" title="**hexo博客有什么？****"></a><strong><strong><strong>**</strong></strong></strong>hexo博客有什么？<strong>****</strong></h1><p><code>注意事项：编写标签分类等不要在typora</code></p>

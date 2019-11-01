@@ -52,18 +52,20 @@
   };
 </script>
 
-  <meta name="description" content="****直接来这复制上面的头部文件******hexo博客有什么？****注意事项：编写标签分类等不要在typora 1、首页  ： 这个不需要设置断页 &#x2F;&#x2F;“">
-<meta name="keywords" content="Github">
+  <meta name="description" content="串口的配置思路：串口1 文件名称：UART1 - 数据发送 实验  实验目的：1.掌握串口通讯基本原理  2.掌握STM32处理器串口的配置和使用方法  程序说明：1.使用程序前，确认UART1引脚PA9 PA10已经通过跳线正确连接。  2.使用串口线连接CN6 到电脑   3.程序中设定串口通讯波特率为9600，使用串口调试工具观察串口输出信息  现象：串口打印 Welcome to NUAA">
+<meta name="keywords" content="嵌入式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo博客怎么写">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;31&#x2F;hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF&#x2F;index.html">
+<meta property="og:title" content="蓝桥杯嵌入式——串口调试">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;01&#x2F;%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E2%80%94%E2%80%94%E4%B8%B2%E5%8F%A3%E8%B0%83%E8%AF%95&#x2F;index.html">
 <meta property="og:site_name" content="lucerm学习历程">
-<meta property="og:description" content="****直接来这复制上面的头部文件******hexo博客有什么？****注意事项：编写标签分类等不要在typora 1、首页  ： 这个不需要设置断页 &#x2F;&#x2F;“">
+<meta property="og:description" content="串口的配置思路：串口1 文件名称：UART1 - 数据发送 实验  实验目的：1.掌握串口通讯基本原理  2.掌握STM32处理器串口的配置和使用方法  程序说明：1.使用程序前，确认UART1引脚PA9 PA10已经通过跳线正确连接。  2.使用串口线连接CN6 到电脑   3.程序中设定串口通讯波特率为9600，使用串口调试工具观察串口输出信息  现象：串口打印 Welcome to NUAA">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-31T11:00:14.774Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;01&#x2F;images&#x2F;%E4%B8%B2%E5%8F%A31%E5%BC%95%E8%84%9A.png">
+<meta property="og:updated_time" content="2019-11-01T11:14:10.350Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;01&#x2F;images&#x2F;%E4%B8%B2%E5%8F%A31%E5%BC%95%E8%84%9A.png">
 
-<link rel="canonical" href="http://yoursite.com/2019/10/31/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/">
+<link rel="canonical" href="http://yoursite.com/2019/11/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E2%80%94%E2%80%94%E4%B8%B2%E5%8F%A3%E8%B0%83%E8%AF%95/">
 
 
 <script id="page-configurations">
@@ -77,7 +79,7 @@
   };
 </script>
 
-  <title>hexo博客怎么写 | lucerm学习历程</title>
+  <title>蓝桥杯嵌入式——串口调试 | lucerm学习历程</title>
   
 
 
@@ -221,7 +223,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/31/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E2%80%94%E2%80%94%E4%B8%B2%E5%8F%A3%E8%B0%83%E8%AF%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -234,7 +236,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          hexo博客怎么写
+          蓝桥杯嵌入式——串口调试
         </h1>
 
         <div class="post-meta">
@@ -245,7 +247,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-10-31 14:29:17 / 修改时间：19:00:14" itemprop="dateCreated datePublished" datetime="2019-10-31T14:29:17+08:00">2019-10-31</time>
+              <time title="创建时间：2019-11-01 15:12:19 / 修改时间：19:14:10" itemprop="dateCreated datePublished" datetime="2019-11-01T15:12:19+08:00">2019-11-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -253,8 +255,14 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%A8%A1%E6%9D%BF/" itemprop="url" rel="index">
-                    <span itemprop="name">模板</span>
+                  <a href="/categories/%E8%AE%B0%E5%BD%95%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">记录学习</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%B0%E5%BD%95%E5%AD%A6%E4%B9%A0/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/" itemprop="url" rel="index">
+                    <span itemprop="name">经验分享</span>
                   </a>
                 </span>
             </span>
@@ -265,14 +273,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>127</span>
+              <span>2.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -284,11 +292,40 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="直接来这复制上面的头部文件"><a href="#直接来这复制上面的头部文件" class="headerlink" title="****直接来这复制上面的头部文件****"></a><strong>****</strong>直接来这复制上面的头部文件****</h1><h1 id="hexo博客有什么？"><a href="#hexo博客有什么？" class="headerlink" title="**hexo博客有什么？****"></a><strong><strong><strong>**</strong></strong></strong>hexo博客有什么？<strong>****</strong></h1><p><code>注意事项：编写标签分类等不要在typora</code></p>
-<p>1、首页  ： 这个不需要设置<br>断页</p>
-<h4 id="“”"><a href="#“”" class="headerlink" title="//“”"></a>//“<a id="more"></a>”</h4><p>2、关于： 本人或博客相关的介绍</p>
-<p>3、标签： 标签<code>tages</code>记得换行并加<code>-</code></p>
-<p>4、分类： 分类categories</p>
+        <h1 id="串口的配置"><a href="#串口的配置" class="headerlink" title="串口的配置"></a>串口的配置</h1><p>思路：</p><h2 id="串口1"><a href="#串口1" class="headerlink" title="串口1"></a>串口1</h2><ul>
+<li><p>文件名称：UART1 - 数据发送 实验</p>
+</li>
+<li><p>实验目的：1.掌握串口通讯基本原理</p>
+</li>
+<li><p>2.掌握STM32处理器串口的配置和使用方法</p>
+</li>
+<li><p>程序说明：1.使用程序前，确认UART1引脚PA9 PA10已经通过跳线正确连接。</p>
+</li>
+<li><p>2.使用串口线连接CN6 到电脑 </p>
+</li>
+<li><p>3.程序中设定串口通讯波特率为9600，使用串口调试工具观察串口输出信息</p>
+</li>
+<li><p>现象：串口打印 Welcome to NUAA         </p>
+</li>
+<li><p>日期版本：2015-NUAA</p>
+</li>
+</ul><a id="more"></a>
+
+<h2 id="串口2"><a href="#串口2" class="headerlink" title="串口2"></a>串口2</h2><ul>
+<li>文件名称：UART2 - 数据发送 实验</li>
+<li>实验目的：1.掌握串口通讯基本原理</li>
+<li>2.掌握STM32处理器串口的配置和使用方法</li>
+<li>程序说明：1.使用程序前，确认UART2引脚PA2 PA3已经通过跳线正确连接。</li>
+<li>2.串口2 默认连接下载串口，下载线可充当串口线，不需要额外连接串口线 </li>
+<li>3.程序中设定串口通讯波特率为9600，使用串口调试工具观察串口输出信息</li>
+<li>现象：串口打印 Welcome to NUAA         </li>
+<li>日期版本：2015-NUAA</li>
+</ul>
+<p>  首先看一下蓝桥杯嵌入式开发板的电路原理图，找到连接串口的引脚。 </p>
+<p>  <img src="../images/%E4%B8%B2%E5%8F%A31%E5%BC%95%E8%84%9A.png" alt="串口1引脚"></p>
+<pre><code>很明显，我们能够看到他有两个串口，一个是串口1(PA9,PA10)，一个是串口2(PA2,PA3),TX为发送端，RX为接收端。不过，我们的蓝桥杯嵌入式开发板并不能直接使用串口1，虽然确实有串口1的电路，但是它连接的确实RS232的9针串口上，也就是说，我们不能直接通过USB去使用到这串口，因此我们一般都用不了这个串口。那么我们一般使用的串口就是串口2了，我们可以直接通过usb下载线去使用这个串口。</code></pre><p>​    </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">USART2_Init</span><span class="params">(u32 bound)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">        GPIO_InitTypeDef GPIO_InitStructure;</span><br><span class="line">        USART_InitTypeDef USART_InitStructure;</span><br><span class="line">        NVIC_InitTypeDef NVIC_InitStructure;</span><br><span class="line">        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE); <span class="comment">//使能PA时钟</span></span><br><span class="line">        RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);<span class="comment">//使能串口2时钟</span></span><br><span class="line">        NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn; <span class="comment">//开启串口2中断</span></span><br><span class="line">        NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = <span class="number">0</span>; <span class="comment">//抢占优先级为最高</span></span><br><span class="line">        NVIC_InitStructure.NVIC_IRQChannelSubPriority = <span class="number">0</span>;   <span class="comment">//响应优先级为最高</span></span><br><span class="line">        NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;  <span class="comment">//使能中断</span></span><br><span class="line">        NVIC_Init(&amp;NVIC_InitStructure);</span><br><span class="line"></span><br><span class="line">        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;  </span><br><span class="line">        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;</span><br><span class="line">        GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;</span><br><span class="line">        GPIO_Init(GPIOA, &amp;GPIO_InitStructure);<span class="comment">//PA2为发送引脚，因此要配置成复用输出模式</span></span><br><span class="line"></span><br><span class="line">        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;</span><br><span class="line">        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;</span><br><span class="line">        GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;</span><br><span class="line">        GPIO_Init(GPIOA, &amp;GPIO_InitStructure);<span class="comment">//PA3为接收引脚，因此要配置成浮空输入模式</span></span><br><span class="line"></span><br><span class="line">        USART_InitStructure.USART_BaudRate = bound; <span class="comment">//波特率</span></span><br><span class="line">        USART_InitStructure.USART_WordLength = USART_WordLength_8b; <span class="comment">//8位数据位</span></span><br><span class="line">        USART_InitStructure.USART_StopBits = USART_StopBits_1; <span class="comment">//1位停止位</span></span><br><span class="line">        USART_InitStructure.USART_Parity = USART_Parity_No; <span class="comment">//无奇偶校验位</span></span><br><span class="line">        USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;  <span class="comment">//使能发送接收</span></span><br><span class="line">        USART_InitStructure.USART_HardwareFlowControl=USART_HardwareFlowControl_None; </span><br><span class="line">        USART_Init(USART2,&amp;USART_InitStructure);        <span class="comment">//不使能硬件流控制</span></span><br><span class="line"></span><br><span class="line">        USART_Cmd(USART2,ENABLE);   <span class="comment">//使能串口2</span></span><br><span class="line">        USART_ITConfig(USART2, USART_IT_RXNE, ENABLE);   <span class="comment">//使能接收中断</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -314,24 +351,21 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Github/" rel="tag"># Github</a>
+              <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" rel="tag"># 嵌入式</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/10/30/%E4%BF%AE%E6%94%B9Indigo%E6%96%87%E7%AB%A0%E9%A1%B5%E9%9D%A2%E5%AE%BD%E5%BA%A6/" rel="next" title="修改Indigo文章页面宽度">
-                  <i class="fa fa-chevron-left"></i> 修改Indigo文章页面宽度
+                <a href="/2019/11/01/GitHub-hexo%E5%8D%9A%E5%AE%A2/" rel="next" title="GitHub+hexo博客">
+                  <i class="fa fa-chevron-left"></i> GitHub+hexo博客
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/01/GitHub-hexo%E5%8D%9A%E5%AE%A2/" rel="prev" title="GitHub+hexo博客">
-                  GitHub+hexo博客 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
       </footer>
@@ -375,7 +409,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#直接来这复制上面的头部文件"><span class="nav-number">1.</span> <span class="nav-text">****直接来这复制上面的头部文件****</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo博客有什么？"><span class="nav-number">2.</span> <span class="nav-text">**hexo博客有什么？****</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#“”"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">//“”</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#串口的配置"><span class="nav-number">1.</span> <span class="nav-text">串口的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#串口1"><span class="nav-number">1.1.</span> <span class="nav-text">串口1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#串口2"><span class="nav-number">1.2.</span> <span class="nav-text">串口2</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
