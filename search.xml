@@ -65,29 +65,26 @@
 <p>因为修改成别的一个英文文件夹是不行的，你只是在环境变量中修改了文件路径，但是系统中这些路径并不存在，所以你打开Keil才会闪退。</p>
 <p><strong>那么解决问题的关键就是：先在系统C盘中创建好了所有的英文路径，再你创建的文件夹路径修改环境变量！！！</strong></p>
 <h1 id="准备工作：先将你的Keil软件关闭"><a href="#准备工作：先将你的Keil软件关闭" class="headerlink" title="准备工作：先将你的Keil软件关闭"></a>准备工作：先将你的Keil软件关闭</h1><p> 1、在【C盘根目录】创建【UserData】文件夹</p>
- <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/test.png" class title="This is an example image"> 
-
+<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/1.png" alt> </p>
 <p>2、打开刚刚创建的【UserData】文件夹</p>
-<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/test.png" alt> </p>
 <p>3、在【UserData】中创建【AppData】文件夹</p>
-<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/12.jpg" alt> </p>
 <p>4、打开【AppData】在其中创建【Local】文件夹</p>
 <p>5、打开【Local】在其中创建【Temp】</p>
 <p>6、所有的文件创建好了，打开【Temp】文件夹</p>
-<p><img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/adaf2edda3cc7cd9e9db07fa3601213fb80e911a.jpg" alt="img"></p>
-<p> 7、将你创建好的文件夹中的地址栏中的内容复制下来。 <img src="../images/9d82d158ccbf6c8117ab1dcbb33eb13533fa4070.jpg" alt="img"></p>
+<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/2.png" alt> </p>
+<p> 7、将你创建好的文件夹中的地址栏中的内容复制下来。</p>
+<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/3.png" alt> </p>
 <p> 8、打开计算机右键-属性-高级系统设置-高级-环境变量 </p>
-<p><img src="../images/faf2b2119313b07e9aca622b03d7912397dd8c99.jpg" alt="img"></p>
-<p> 9、修改【TEMP】和【TMP】的环境变量 <img src="../images/8ad4b31c8701a18b798b206c912f07082838feb5.jpg" alt="img"></p>
-<p><img src="../images/d6ca7bcb0a46f21f93166370f9246b600c33aef6.jpg" alt="img"></p>
-<p>将原本的环境变量删除，替换为我们之前所创建文件夹的路径【 C:\UserData\AppData\Local\Temp 】</p>
+<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/4.png" alt> </p>
+<p> 9、修改【TEMP】和【TMP】的环境变量 </p>
+<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/5.png" alt> </p>
+<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/6.png" alt> </p>
+<p>将原本的环境变量删除，替换为我们之前所创建文件夹的路径</p>
+<p>【 C:\UserData\AppData\Local\Temp 】</p>
 <p>完成后如下图↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓</p>
-<p><a href="https://gss0.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/e850352ac65c103819b0f3e1bd119313b17e89c2.jpg" target="_blank" rel="noopener"><img src="../images/e850352ac65c103819b0f3e1bd119313b17e89c2.jpg" alt="img">
-</a></p>
-<p>点击确定后退出。</p>
+<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/7.png" alt> </p>
 <p>再次打开Keil编译即可不再报错，再次愉快写代码吧。</p>
-<p>祝愿诸位万事如意</p>
-]]></content>
+<h2 id="参考文献：-https-zhidao-baidu-com-question-536159784-html"><a href="#参考文献：-https-zhidao-baidu-com-question-536159784-html" class="headerlink" title="参考文献： https://zhidao.baidu.com/question/536159784.html"></a>参考文献： <a href="https://zhidao.baidu.com/question/536159784.html" target="_blank" rel="noopener">https://zhidao.baidu.com/question/536159784.html</a></h2>]]></content>
       <categories>
         <category>嵌入式</category>
       </categories>
