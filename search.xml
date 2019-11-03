@@ -1,18 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo博客模板</title>
+    <url>/2019/11/03/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h1 id="直接来这复制上面的头部文件"><a href="#直接来这复制上面的头部文件" class="headerlink" title="****直接来这复制上面的头部文件****"></a><strong>****</strong>直接来这复制上面的头部文件****</h1><h1 id="hexo博客有什么？"><a href="#hexo博客有什么？" class="headerlink" title="**hexo博客有什么？****"></a><strong><strong><strong>**</strong></strong></strong>hexo博客有什么？<strong>****</strong></h1><p><code>注意事项：编写标签分类等不要在typora</code></p>
+<p>1、首页  ： 这个不需要设置<br>断页</p>
+<h4 id="“”"><a href="#“”" class="headerlink" title="//“”"></a>//“<a id="more"></a>”</h4><p>2、关于： 本人或博客相关的介绍</p>
+<p>3、标签： 标签<code>tages</code>记得换行并加<code>-</code></p>
+<p>4、分类： 分类categories</p>
+<p>插入图片</p>
+<p> <img src="/2019/11/03/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/../../12.jpg" alt> </p>
+<h2 id="本地引用"><a href="#本地引用" class="headerlink" title="本地引用"></a>本地引用</h2><h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><p>当Hexo项目中只用到少量图片时，可以将图片统一放在<code>source/images</code>文件夹中，通过markdown语法访问它们。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![](/images/image.jpg)</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<p>图片既可以在首页内容中访问到，也可以在文章正文中访问到。</p>
+<h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><p>图片除了可以放在统一的images文件夹中，还可以放在文章自己的目录中。文章的目录可以通过配置<code>_config.yml</code>来生成。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<p>将<code>_config.yml</code>文件中的配置项<code>post_asset_folder</code>设为true后，执行命令<code>$ hexo new post_name</code>，在<code>source/_posts</code>中会生成文章<code>post_name.md</code>和同名文件夹<code>post_name</code>。将图片资源放在<code>post_name</code>中，文章就可以使用相对路径引用图片资源了。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![](image.jpg)</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<p><strong>上述是markdown的引用方式，图片只能在文章中显示，但无法在首页中正常显示。</strong></p>
+<p>如果希望图片在文章和首页中同时显示，可以使用标签插件语法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img image.jpg This is an image %&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub搭建hexo博客</title>
+    <url>/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="1-首先，得在GitHub上有个自己的仓库"><a href="#1-首先，得在GitHub上有个自己的仓库" class="headerlink" title="1.首先，得在GitHub上有个自己的仓库"></a><strong>1.首先，得在GitHub上有个自己的仓库</strong></h1><p>这个默认都有点了，没有的百度网上很多教程如何创建GitHub，并创建GitHub.io库</p><a id="more"></a>
+<h1 id="2-环境搭建"><a href="#2-环境搭建" class="headerlink" title="2.环境搭建"></a>2.环境搭建</h1><h2 id="2-1-首先，我们需要下载node-js和git-安装基本上就是默认安装即可。"><a href="#2-1-首先，我们需要下载node-js和git-安装基本上就是默认安装即可。" class="headerlink" title="　2.1 首先，我们需要下载node.js和git.安装基本上就是默认安装即可。"></a>　<strong>2.1 首先，我们需要下载<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js</a>和<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>.安装基本上就是默认安装即可。</strong></h2><p> 安装，完成之后，打开命令窗口（Win+R，输入CMD，回车），分别输入node -v, npm -v, git -version, 如果都能像下图一样返回版本号就说明安装好了。 </p>
+<p><img src="../../../../images/1228928-20171210164556943-1814058239.png" alt="img"></p>
+<p> 　如果在这里不可以操作git，说明在安装时没有更改路径，设置为windows环境下也可以操作，不过没有关系，只需要将git的安装路径添加到环境变量中就可以在windows下操作，或者我们可以运行git bash，在这里查看git的版本号（安装git之后一定会生成git bash）， </p>
+<p><img src="../../../../images/1228928-20171210165330443-675669731.png" alt="img"></p>
+<h2 id="2-2-SSH授权"><a href="#2-2-SSH授权" class="headerlink" title="2.2 SSH授权"></a><strong>2.2 SSH授权</strong></h2><p> 打开git bash，输入ssh-keygen -t rsa, 接着回车三下 </p>
+<p><img src="../../../../images/1228928-20171210170029599-1633314112.png" alt="img"></p>
+<p> 这样就会在C盘用户目录下生成id_rsa和id_rsa.pub这两个文件，前者是密钥，后者是公钥，用记事本打开id_rsa.pub，复制其中的全部内容，添加到GitHub上，这样本地的id_rsa密钥就可以和GitHub上的id_rsa.pub公钥进行配对，授权成功。 </p>
+<p><img src="../../../../images/1228928-20171210171603958-1209919722.jpg" alt="img"></p>
+<p> 　SSH key添加之后，就可以在本机git bash中进行测试，输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>进行测试， </p>
+<p><img src="../../../../images/1228928-20171210171822615-599279373.png" alt="img"></p>
+<p> 返回Hi username ！You’ve successfully ……说明你已经成功啦！ </p>
+<h1 id="3-设置本地博客的配置"><a href="#3-设置本地博客的配置" class="headerlink" title="3. 设置本地博客的配置"></a><strong>3. 设置本地博客的配置</strong></h1><h2 id="3-1-安装hexo"><a href="#3-1-安装hexo" class="headerlink" title="3.1 安装hexo"></a><strong>3.1 安装hexo</strong></h2><p> 在任意一个地方新建一个文件夹，在git bash中进入这个文件夹，比如<strong>cd /d/Files/hexo/</strong>（之后安装的内容会保存在这个文件夹内），输入npm install -g hexo安装hexo即可，如下图（我已经安装过了，就不再安装了） </p>
+<p><img src="../../../../images/1228928-20171210182333536-1195927792-1572422355814.png" alt="img"></p>
+<p>　　注意，在回车之后，可能会出现一行WARN的警告语句，不用管它，什么都不要按，等着。。。过一段时间如果出现hexo版本号之类的语句就代表差不多了。</p>
+<p>　　然后输入<strong>npm install hexo –save</strong>这个时候你会看到命令行出现了一堆白字，紧接着输入<strong>hexo v</strong>查看是否安装成功</p>
+]]></content>
+      <categories>
+        <category>经验分享</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>README</title>
+    <url>/2019/11/02/README/</url>
+    <content><![CDATA[<h1 id="lucerm-github-io"><a href="#lucerm-github-io" class="headerlink" title="lucerm.github.io"></a>lucerm.github.io</h1><p>保存配置文件</p>]]></content>
+  </entry>
+  <entry>
     <title>keil5中文名字编译出错</title>
     <url>/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/</url>
     <content><![CDATA[<p>根据百度其他答案给的思路，其实就是修改环境变量，因为当前系统TEMP和TMP环境变量存在着中文。但是如果你直接修改 <strong><em>%USERPROFILE%</em></strong> <strong>为其他英文路径开Keil会卡死并闪退（其实是你打开main.c就闪退）！！！</strong></p><a id="more"></a>
 <p>因为修改成别的一个英文文件夹是不行的，你只是在环境变量中修改了文件路径，但是系统中这些路径并不存在，所以你打开Keil才会闪退。</p>
 <p><strong>那么解决问题的关键就是：先在系统C盘中创建好了所有的英文路径，再你创建的文件夹路径修改环境变量！！！</strong></p>
-<h1 id="准备工作：先将你的Keil软件关闭"><a href="#准备工作：先将你的Keil软件关闭" class="headerlink" title="准备工作：先将你的Keil软件关闭"></a>准备工作：先将你的Keil软件关闭</h1><p> 1、在【C盘根目录】创建【UserData】文件夹 <img src="../images/7dd98d1001e939014f19471c74ec54e736d196fd.jpg" alt="img"></p>
+<h1 id="准备工作：先将你的Keil软件关闭"><a href="#准备工作：先将你的Keil软件关闭" class="headerlink" title="准备工作：先将你的Keil软件关闭"></a>准备工作：先将你的Keil软件关闭</h1><p> 1、在【C盘根目录】创建【UserData】文件夹</p>
+ <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/test.png" class title="This is an example image"> 
+
 <p>2、打开刚刚创建的【UserData】文件夹</p>
+<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/test.png" alt> </p>
 <p>3、在【UserData】中创建【AppData】文件夹</p>
+<p> <img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/12.jpg" alt> </p>
 <p>4、打开【AppData】在其中创建【Local】文件夹</p>
 <p>5、打开【Local】在其中创建【Temp】</p>
 <p>6、所有的文件创建好了，打开【Temp】文件夹</p>
-<p><img src="../images/adaf2edda3cc7cd9e9db07fa3601213fb80e911a.jpg" alt="img"></p>
+<p><img src="/2019/11/02/keil5%E4%B8%AD%E6%96%87%E5%90%8D%E5%AD%97%E7%BC%96%E8%AF%91%E5%87%BA%E9%94%99/adaf2edda3cc7cd9e9db07fa3601213fb80e911a.jpg" alt="img"></p>
 <p> 7、将你创建好的文件夹中的地址栏中的内容复制下来。 <img src="../images/9d82d158ccbf6c8117ab1dcbb33eb13533fa4070.jpg" alt="img"></p>
 <p> 8、打开计算机右键-属性-高级系统设置-高级-环境变量 </p>
 <p><img src="../images/faf2b2119313b07e9aca622b03d7912397dd8c99.jpg" alt="img"></p>
@@ -31,72 +98,6 @@
       </categories>
       <tags>
         <tag>解决问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo博客怎么写</title>
-    <url>/2019/10/31/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h1 id="直接来这复制上面的头部文件"><a href="#直接来这复制上面的头部文件" class="headerlink" title="****直接来这复制上面的头部文件****"></a><strong>****</strong>直接来这复制上面的头部文件****</h1><h1 id="hexo博客有什么？"><a href="#hexo博客有什么？" class="headerlink" title="**hexo博客有什么？****"></a><strong><strong><strong>**</strong></strong></strong>hexo博客有什么？<strong>****</strong></h1><p><code>注意事项：编写标签分类等不要在typora</code></p>
-<p>1、首页  ： 这个不需要设置<br>断页</p>
-<h4 id="“”"><a href="#“”" class="headerlink" title="//“”"></a>//“<a id="more"></a>”</h4><p>2、关于： 本人或博客相关的介绍</p>
-<p>3、标签： 标签<code>tages</code>记得换行并加<code>-</code></p>
-<p>4、分类： 分类categories</p>
-]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改Indigo文章页面宽度</title>
-    <url>/2019/10/30/%E4%BF%AE%E6%94%B9Indigo%E6%96%87%E7%AB%A0%E9%A1%B5%E9%9D%A2%E5%AE%BD%E5%BA%A6/</url>
-    <content><![CDATA[<h1 id="本博客一直在使用indigo作为我们的模板-但是现在发现了一个问题-正文的宽度太小了-有时候无法看全代码"><a href="#本博客一直在使用indigo作为我们的模板-但是现在发现了一个问题-正文的宽度太小了-有时候无法看全代码" class="headerlink" title="本博客一直在使用indigo作为我们的模板. 但是现在发现了一个问题: 正文的宽度太小了, 有时候无法看全代码!"></a>本博客一直在使用indigo作为我们的模板. 但是现在发现了一个问题: 正文的宽度太小了, 有时候无法看全代码!</h1><p>发现indigo的GitHub上面也有人问了同样的问题: <a href="https://github.com/yscoder/hexo-theme-indigo/issues/279" target="_blank" rel="noopener">地址</a>.</p>
-<p>我给了一个比较不完美的解决方法:</p>
-<a id="more"></a>
-<blockquote>
-<p>我也有这个问题, 我把<code>hexo-theme-indigo/layout/page.ejs</code>和<code>hexo-theme-indigo/layout/post.ejs</code>中的``标签加上了<code>style=&quot;width: 1000px;&quot;</code>, 但是这样的话, 手机上看就会不能自适应…</p>
-</blockquote>
-<p>可能把帖子顶起来了, 有人在下面贴出了完美的解决方法:</p>
-<p>(1) 把<code>hexo-theme-indigo/source/css/_partial/variable.less</code>中的<code>@contentWidth: 960px;</code>改成<code>@contentWidth: 90%;</code>, 当然这个大小是自己可调的, 我调成了80%(效果就是本页面显示的样子).</p>
-<p>(2) 修改config文件, 将<code>cdn</code>设置为<code>false</code>, 关闭CDN加速.</p>
-<p>(3) 执行<code>hexo clean</code>命令清空缓存, 再去执行<code>hexo g</code>重新构建发布.</p>
-]]></content>
-      <categories>
-        <category>解决问题</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GitHub搭建hexo博客</title>
-    <url>/2019/10/30/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="1-首先，得在GitHub上有个自己的仓库"><a href="#1-首先，得在GitHub上有个自己的仓库" class="headerlink" title="1.首先，得在GitHub上有个自己的仓库"></a><strong>1.首先，得在GitHub上有个自己的仓库</strong></h1><p>这个默认都有点了，没有的百度网上很多教程如何创建GitHub，并创建GitHub.io库</p><a id="more"></a>
-<h1 id="2-环境搭建"><a href="#2-环境搭建" class="headerlink" title="2.环境搭建"></a>2.环境搭建</h1><h2 id="2-1-首先，我们需要下载node-js和git-安装基本上就是默认安装即可。"><a href="#2-1-首先，我们需要下载node-js和git-安装基本上就是默认安装即可。" class="headerlink" title="　2.1 首先，我们需要下载node.js和git.安装基本上就是默认安装即可。"></a>　<strong>2.1 首先，我们需要下载<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js</a>和<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>.安装基本上就是默认安装即可。</strong></h2><p> 安装，完成之后，打开命令窗口（Win+R，输入CMD，回车），分别输入node -v, npm -v, git -version, 如果都能像下图一样返回版本号就说明安装好了。 </p>
-<p><img src="/images/1228928-20171210164556943-1814058239.png" alt="img"></p>
-<p> 　如果在这里不可以操作git，说明在安装时没有更改路径，设置为windows环境下也可以操作，不过没有关系，只需要将git的安装路径添加到环境变量中就可以在windows下操作，或者我们可以运行git bash，在这里查看git的版本号（安装git之后一定会生成git bash）， </p>
-<p><img src="/images/1228928-20171210165330443-675669731.png" alt="img"></p>
-<h2 id="2-2-SSH授权"><a href="#2-2-SSH授权" class="headerlink" title="2.2 SSH授权"></a><strong>2.2 SSH授权</strong></h2><p> 打开git bash，输入ssh-keygen -t rsa, 接着回车三下 </p>
-<p><img src="/images/1228928-20171210170029599-1633314112.png" alt="img"></p>
-<p> 这样就会在C盘用户目录下生成id_rsa和id_rsa.pub这两个文件，前者是密钥，后者是公钥，用记事本打开id_rsa.pub，复制其中的全部内容，添加到GitHub上，这样本地的id_rsa密钥就可以和GitHub上的id_rsa.pub公钥进行配对，授权成功。 </p>
-<p><img src="/images/1228928-20171210171603958-1209919722.jpg" alt="img"></p>
-<p> 　SSH key添加之后，就可以在本机git bash中进行测试，输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>进行测试， </p>
-<p><img src="/images/1228928-20171210171822615-599279373.png" alt="img"></p>
-<p> 返回Hi username ！You’ve successfully ……说明你已经成功啦！ </p>
-<h1 id="3-设置本地博客的配置"><a href="#3-设置本地博客的配置" class="headerlink" title="3. 设置本地博客的配置"></a><strong>3. 设置本地博客的配置</strong></h1><h2 id="3-1-安装hexo"><a href="#3-1-安装hexo" class="headerlink" title="3.1 安装hexo"></a><strong>3.1 安装hexo</strong></h2><p> 在任意一个地方新建一个文件夹，在git bash中进入这个文件夹，比如<strong>cd /d/Files/hexo/</strong>（之后安装的内容会保存在这个文件夹内），输入npm install -g hexo安装hexo即可，如下图（我已经安装过了，就不再安装了） </p>
-<p><img src="/images/1228928-20171210182333536-1195927792-1572422355814.png" alt="img"></p>
-<p>　　注意，在回车之后，可能会出现一行WARN的警告语句，不用管它，什么都不要按，等着。。。过一段时间如果出现hexo版本号之类的语句就代表差不多了。</p>
-<p>　　然后输入<strong>npm install hexo –save</strong>这个时候你会看到命令行出现了一堆白字，紧接着输入<strong>hexo v</strong>查看是否安装成功</p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>博客</tag>
       </tags>
   </entry>
 </search>
