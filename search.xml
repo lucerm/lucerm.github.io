@@ -1,28 +1,460 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo插入图片</title>
+    <url>/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p> 1.把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true（如果没有就不用管了） </p><a id="more"></a>
+<p> <img src="/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/1.png" alt> </p>
+<p>2.在cmd中你的hexo目录下执行这样一句话</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image –save</span><br></pre></td></tr></table></figure>
+
+<p>，这是下载安装一个可以上传本地图片的插件</p>
+<p>3.安装完成后，再运行</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo n “博客名称”</span><br></pre></td></tr></table></figure>
+
+<p>来生成md博文时，/source/_posts文件夹内除了    博客名称.md    文件还有一个同名的文件夹<br> <img src="/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2.png" alt> </p>
+<p> <img src="/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/3.png" alt> </p>
+<p>4.在博客名称.md中引入图片时，先把图片复制到博客名称这个文件夹中，然后只需要在博客名称.md中按照markdown的格式引入图片：</p>
+<p> <img src="/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/4.png" alt> </p>
+<p>插入格式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![](5.png)</span><br></pre></td></tr></table></figure>
+
+<p> 最后，来看一下效果： </p>
+<p> <img src="/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/5.png" alt> </p>
+]]></content>
+      <categories>
+        <category>经验分享</category>
+        <category>解决问题</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>博客</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo博客模板</title>
     <url>/2019/11/03/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h1 id="直接来这复制上面的头部文件"><a href="#直接来这复制上面的头部文件" class="headerlink" title="****直接来这复制上面的头部文件****"></a><strong>****</strong>直接来这复制上面的头部文件****</h1><h1 id="hexo博客有什么？"><a href="#hexo博客有什么？" class="headerlink" title="**hexo博客有什么？****"></a><strong><strong><strong>**</strong></strong></strong>hexo博客有什么？<strong>****</strong></h1><p><code>注意事项：编写标签分类等不要在typora</code></p>
-<p>1、首页  ： 这个不需要设置<br>断页</p>
-<h4 id="“”"><a href="#“”" class="headerlink" title="//“”"></a>//“<a id="more"></a>”</h4><p>2、关于： 本人或博客相关的介绍</p>
-<p>3、标签： 标签<code>tages</code>记得换行并加<code>-</code></p>
-<p>4、分类： 分类categories</p>
+    <content><![CDATA[<center>这一行需要居中</center>
+#     ********直接来这复制上面的头部文件****
+
+<h1 id="hexo博客有什么？"><a href="#hexo博客有什么？" class="headerlink" title="**hexo博客有什么？****"></a><strong><strong><strong>**</strong></strong></strong>hexo博客有什么？<strong>****</strong></h1><p><code>注意事项：编写标签分类等不要在typora</code></p>
+<h2 id="1、首页-：-这个不需要设置"><a href="#1、首页-：-这个不需要设置" class="headerlink" title="1、首页  ： 这个不需要设置"></a>1、首页  ： 这个不需要设置</h2><p><font color="#FF0000">模板设置</font></p>
+<p>断页</p>
+<h4 id="“”"><a href="#“”" class="headerlink" title="//“”"></a>//“<a id="more"></a>”</h4><h2 id="2、关于：-本人或博客相关的介绍"><a href="#2、关于：-本人或博客相关的介绍" class="headerlink" title="2、关于： 本人或博客相关的介绍"></a>2、关于： 本人或博客相关的介绍</h2><h2 id="3、标签：-标签tages记得换行并加"><a href="#3、标签：-标签tages记得换行并加" class="headerlink" title="3、标签： 标签tages记得换行并加-"></a>3、标签： 标签<code>tages</code>记得换行并加<code>-</code></h2><p>目前标签有： GitHub   博客   解决问题</p>
+<h2 id="4、分类：-分类categories"><a href="#4、分类：-分类categories" class="headerlink" title="4、分类： 分类categories"></a>4、分类： 分类categories</h2><p>目前分类有： 嵌入式     模板    经验分享   教程技术  </p>
 <p>插入图片</p>
-<p> <img src="/2019/11/03/hexo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/../../12.jpg" alt> </p>
-<h2 id="本地引用"><a href="#本地引用" class="headerlink" title="本地引用"></a>本地引用</h2><h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><p>当Hexo项目中只用到少量图片时，可以将图片统一放在<code>source/images</code>文件夹中，通过markdown语法访问它们。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![](/images/image.jpg)</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+<p>格式</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![](test.png)</span><br></pre></td></tr></table></figure>
 
-<p>图片既可以在首页内容中访问到，也可以在文章正文中访问到。</p>
-<h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><p>图片除了可以放在统一的images文件夹中，还可以放在文章自己的目录中。文章的目录可以通过配置<code>_config.yml</code>来生成。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+<p>一个汉字占两个空格大小，所以使用四个空格就可以达到首行缩进两个汉字的效果。有如下几种方法：</p>
+<p>一个空格大小的表示：&ensp;或&#8194;，此时只要在相应需要缩进的段落前加上 4个 如上的标记即可，注意要带上分号。</p>
+<p>两个空格的大小表示：&emsp;或&#8195;，同理，使用2个即可缩进2个汉字，推荐使用该方式。</p>
+<p>不换行空格：&nbsp;或&#160;，使用4个&#160;即可。</p>
+<p>以上空格实体的详细介绍如下：<br> <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑<br><font face="微软雅黑">微软雅黑字体</font><br><font face="黑体">黑体</font><br><font size="3">3号字</font><br><font size="18">18号字</font><br><font color="#FF0000">红色</font><br><font color="#008000">绿色</font><br><font color="#0000FF">蓝色</font></p>
+<table><tr><td bgcolor="orange"> 背景色是 1 orange</td></tr></table>
+<table><tr><td bgcolor="BlueViolet"> 背景色2 BlueViolet </td></tr></table>
+<table><tr><td bgcolor="orange"> 代码块 orange</td></tr></table>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span> <span class="attr">bgcolor</span>=<span class="string">orange</span>&gt;</span> 代码块 orange<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>将<code>_config.yml</code>文件中的配置项<code>post_asset_folder</code>设为true后，执行命令<code>$ hexo new post_name</code>，在<code>source/_posts</code>中会生成文章<code>post_name.md</code>和同名文件夹<code>post_name</code>。将图片资源放在<code>post_name</code>中，文章就可以使用相对路径引用图片资源了。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![](image.jpg)</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
 
-<p><strong>上述是markdown的引用方式，图片只能在文章中显示，但无法在首页中正常显示。</strong></p>
-<p>如果希望图片在文章和首页中同时显示，可以使用标签插件语法。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img image.jpg This is an image %&#125;</span><br></pre></td></tr></table></figure>]]></content>
+
+<table><tr><td bgcolor="Coral"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://f.51240.com/file/zaixianwangyebianji/kindeditor-4.1.7/plugins/emoticons/images/13.gif" border="0" alt>w我就<span style="font-size:14px;">是我<span style="font-size:18px;">我<span style="font-size:24px;">我</span></span></span></td></tr></table>
+
+
+<p>颜色名    十六进制颜色值    颜色</p>
+<table><tr><td bgcolor="AliceBlue"> AliceBlue #F0F8FF    rgb(240, 248, 255)</td></tr></table>
+<table><tr><td bgcolor="AntiqueWhite"> AntiqueWhite    FAEBD7 rgb(250, 235, 215)</td></tr></table>
+<font color="AntiqueWhite">AntiqueWhite    FAEBD7 rgb(250, 235, 215)</font>
+Aqua    #00FFFF    rgb(0, 255, 255)
+Aquamarine    #7FFFD4    rgb(127, 255, 212)
+Azure    #F0FFFF    rgb(240, 255, 255)
+Beige    #F5F5DC    rgb(245, 245, 220)
+Bisque    #FFE4C4    rgb(255, 228, 196)
+Black    #000000    rgb(0, 0, 0)
+BlanchedAlmond    #FFEBCD    rgb(255, 235, 205)
+Blue    #0000FF    rgb(0, 0, 255)
+BlueViolet    #8A2BE2    rgb(138, 43, 226)
+Brown    #A52A2A    rgb(165, 42, 42)
+BurlyWood    #DEB887    rgb(222, 184, 135)
+CadetBlue    #5F9EA0    rgb(95, 158, 160)
+Chartreuse    #7FFF00    rgb(127, 255, 0)
+Chocolate    #D2691E    rgb(210, 105, 30)
+Coral    #FF7F50    rgb(255, 127, 80)
+CornflowerBlue    #6495ED    rgb(100, 149, 237)
+Cornsilk    #FFF8DC    rgb(255, 248, 220)
+Crimson    #DC143C    rgb(220, 20, 60)
+Cyan    #00FFFF    rgb(0, 255, 255)
+DarkBlue    #00008B    rgb(0, 0, 139)
+DarkCyan    #008B8B    rgb(0, 139, 139)
+DarkGoldenRod    #B8860B    rgb(184, 134, 11)
+DarkGray    #A9A9A9    rgb(169, 169, 169)
+DarkGreen    #006400    rgb(0, 100, 0)
+DarkKhaki    #BDB76B    rgb(189, 183, 107)
+DarkMagenta    #8B008B    rgb(139, 0, 139)
+DarkOliveGreen    #556B2F    rgb(85, 107, 47)
+Darkorange    #FF8C00    rgb(255, 140, 0)
+DarkOrchid    #9932CC    rgb(153, 50, 204)
+DarkRed    #8B0000    rgb(139, 0, 0)
+DarkSalmon    #E9967A    rgb(233, 150, 122)
+DarkSeaGreen    #8FBC8F    rgb(143, 188, 143)
+DarkSlateBlue    #483D8B    rgb(72, 61, 139)
+DarkSlateGray    #2F4F4F    rgb(47, 79, 79)
+DarkTurquoise    #00CED1    rgb(0, 206, 209)
+DarkViolet    #9400D3    rgb(148, 0, 211)
+DeepPink    #FF1493    rgb(255, 20, 147)
+DeepSkyBlue    #00BFFF    rgb(0, 191, 255)
+DimGray    #696969    rgb(105, 105, 105)
+DodgerBlue    #1E90FF    rgb(30, 144, 255)
+Feldspar    #D19275    rgb(209, 146, 117)
+FireBrick    #B22222    rgb(178, 34, 34)
+FloralWhite    #FFFAF0    rgb(255, 250, 240)
+ForestGreen    #228B22    rgb(34, 139, 34)
+Fuchsia    #FF00FF    rgb(255, 0, 255)
+Gainsboro    #DCDCDC    rgb(220, 220, 220)
+GhostWhite    #F8F8FF    rgb(248, 248, 255)
+Gold    #FFD700    rgb(255, 215, 0)
+GoldenRod    #DAA520    rgb(218, 165, 32)
+Gray    #808080    rgb(128, 128, 128)
+Green    #008000    rgb(0, 128, 0)
+GreenYellow    #ADFF2F    rgb(173, 255, 47)
+HoneyDew    #F0FFF0    rgb(240, 255, 240)
+HotPink    #FF69B4    rgb(255, 105, 180)
+IndianRed    #CD5C5C    rgb(205, 92, 92)
+Indigo    #4B0082    rgb(75, 0, 130)
+Ivory    #FFFFF0    rgb(255, 255, 240)
+Khaki    #F0E68C    rgb(240, 230, 140)
+Lavender    #E6E6FA    rgb(230, 230, 250)
+LavenderBlush    #FFF0F5    rgb(255, 240, 245)
+LawnGreen    #7CFC00    rgb(124, 252, 0)
+LemonChiffon    #FFFACD    rgb(255, 250, 205)
+LightBlue    #ADD8E6    rgb(173, 216, 230)
+LightCoral    #F08080    rgb(240, 128, 128)
+LightCyan    #E0FFFF    rgb(224, 255, 255)
+LightGoldenRodYellow    #FAFAD2    rgb(250, 250, 210)
+LightGrey    #D3D3D3    rgb(211, 211, 211)
+LightGreen    #90EE90    rgb(144, 238, 144)
+LightPink    #FFB6C1    rgb(255, 182, 193)
+LightSalmon    #FFA07A    rgb(255, 160, 122)
+LightSeaGreen    #20B2AA    rgb(32, 178, 170)
+LightSkyBlue    #87CEFA    rgb(135, 206, 250)
+LightSlateBlue    #8470FF    rgb(132, 112, 255)
+LightSlateGray    #778899    rgb(119, 136, 153)
+LightSteelBlue    #B0C4DE    rgb(176, 196, 222)
+LightYellow    #FFFFE0    rgb(255, 255, 224)
+Lime    #00FF00    rgb(0, 255, 0)
+LimeGreen    #32CD32    rgb(50, 205, 50)
+Linen    #FAF0E6    rgb(250, 240, 230)
+Magenta    #FF00FF    rgb(255, 0, 255)
+Maroon    #800000    rgb(128, 0, 0)
+MediumAquaMarine    #66CDAA    rgb(102, 205, 170)
+MediumBlue    #0000CD    rgb(0, 0, 205)
+MediumOrchid    #BA55D3    rgb(186, 85, 211)
+MediumPurple    #9370D8    rgb(147, 112, 216)
+MediumSeaGreen    #3CB371    rgb(60, 179, 113)
+MediumSlateBlue    #7B68EE    rgb(123, 104, 238)
+MediumSpringGreen    #00FA9A    rgb(0, 250, 154)
+MediumTurquoise    #48D1CC    rgb(72, 209, 204)
+MediumVioletRed    #C71585    rgb(199, 21, 133)
+MidnightBlue    #191970    rgb(25, 25, 112)
+MintCream    #F5FFFA    rgb(245, 255, 250)
+MistyRose    #FFE4E1    rgb(255, 228, 225)
+Moccasin    #FFE4B5    rgb(255, 228, 181)
+NavajoWhite    #FFDEAD    rgb(255, 222, 173)
+Navy    #000080    rgb(0, 0, 128)
+OldLace    #FDF5E6    rgb(253, 245, 230)
+Olive    #808000    rgb(128, 128, 0)
+OliveDrab    #6B8E23    rgb(107, 142, 35)
+Orange    #FFA500    rgb(255, 165, 0)
+OrangeRed    #FF4500    rgb(255, 69, 0)
+Orchid    #DA70D6    rgb(218, 112, 214)
+PaleGoldenRod    #EEE8AA    rgb(238, 232, 170)
+PaleGreen    #98FB98    rgb(152, 251, 152)
+PaleTurquoise    #AFEEEE    rgb(175, 238, 238)
+PaleVioletRed    #D87093    rgb(216, 112, 147)
+PapayaWhip    #FFEFD5    rgb(255, 239, 213)
+PeachPuff    #FFDAB9    rgb(255, 218, 185)
+Peru    #CD853F    rgb(205, 133, 63)
+Pink    #FFC0CB    rgb(255, 192, 203)
+Plum    #DDA0DD    rgb(221, 160, 221)
+PowderBlue    #B0E0E6    rgb(176, 224, 230)
+Purple    #800080    rgb(128, 0, 128)
+Red    #FF0000    rgb(255, 0, 0)
+RosyBrown    #BC8F8F    rgb(188, 143, 143)
+RoyalBlue    #4169E1    rgb(65, 105, 225)
+SaddleBrown    #8B4513    rgb(139, 69, 19)
+Salmon    #FA8072    rgb(250, 128, 114)
+SandyBrown    #F4A460    rgb(244, 164, 96)
+SeaGreen    #2E8B57    rgb(46, 139, 87)
+SeaShell    #FFF5EE    rgb(255, 245, 238)
+Sienna    #A0522D    rgb(160, 82, 45)
+Silver    #C0C0C0    rgb(192, 192, 192)
+SkyBlue    #87CEEB    rgb(135, 206, 235)
+SlateBlue    #6A5ACD    rgb(106, 90, 205)
+SlateGray    #708090    rgb(112, 128, 144)
+Snow    #FFFAFA    rgb(255, 250, 250)
+SpringGreen    #00FF7F    rgb(0, 255, 127)
+SteelBlue    #4682B4    rgb(70, 130, 180)
+Tan    #D2B48C    rgb(210, 180, 140)
+Teal    #008080    rgb(0, 128, 128)
+Thistle    #D8BFD8    rgb(216, 191, 216)
+Tomato    #FF6347    rgb(255, 99, 71)
+Turquoise    #40E0D0    rgb(64, 224, 208)
+Violet    #EE82EE    rgb(238, 130, 238)
+VioletRed    #D02090    rgb(208, 32, 144)
+Wheat    #F5DEB3    rgb(245, 222, 179)
+White    #FFFFFF    rgb(255, 255, 255)
+WhiteSmoke    #F5F5F5    rgb(245, 245, 245)
+Yellow    #FFFF00    rgb(255, 255, 0)
+YellowGreen    #9ACD32    rgb(154, 205, 50)
+
+
+<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面，Markdown文件的后缀名便是“.md”</p>
+<h2 id="MdEditor是一个在线编辑Markdown文档的编辑器"><a href="#MdEditor是一个在线编辑Markdown文档的编辑器" class="headerlink" title="MdEditor是一个在线编辑Markdown文档的编辑器"></a>MdEditor是一个在线编辑Markdown文档的编辑器</h2><p><em>MdEditor扩展了Markdown的功能（如表格、脚注、内嵌HTML等等），以使让Markdown转换成更多的格式，和更丰富的展示效果，这些功能原初的Markdown尚不具备。</em></p>
+<blockquote>
+<p>Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如<del>Pandoc</del>，Pandao；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。</p>
+</blockquote>
+<p>MdEditor源于Pandao的JavaScript开源项目，开源地址<a href="https://github.com/pandao/editor.md" target="_blank" rel="noopener" title="Editor.md">Editor.md</a>，并在MIT开源协议的许可范围内进行了优化，以适应广大用户群体的需求。向优秀的markdown开源编辑器原作者Pandao致敬。</p>
+<p><img src="https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png" alt="Pandao editor.md" title="Pandao editor.md"></p>
+<h2 id="MdEditor的功能列表演示"><a href="#MdEditor的功能列表演示" class="headerlink" title="MdEditor的功能列表演示"></a>MdEditor的功能列表演示</h2><h1 id="标题H1"><a href="#标题H1" class="headerlink" title="标题H1"></a>标题H1</h1><h2 id="标题H2"><a href="#标题H2" class="headerlink" title="标题H2"></a>标题H2</h2><h3 id="标题H3"><a href="#标题H3" class="headerlink" title="标题H3"></a>标题H3</h3><h4 id="标题H4"><a href="#标题H4" class="headerlink" title="标题H4"></a>标题H4</h4><h5 id="标题H5"><a href="#标题H5" class="headerlink" title="标题H5"></a>标题H5</h5><h6 id="标题H5-1"><a href="#标题H5-1" class="headerlink" title="标题H5"></a>标题H5</h6><h3 id="字符效果和横线等"><a href="#字符效果和横线等" class="headerlink" title="字符效果和横线等"></a>字符效果和横线等</h3><hr>
+<p><del>删除线</del> <s>删除线（开启识别HTML标签时）</s></p>
+<p><em>斜体字</em>      <em>斜体字</em></p>
+<p><strong>粗体</strong>  <strong>粗体</strong></p>
+<p><strong><em>粗斜体</em></strong> <strong><em>粗斜体</em></strong></p>
+<p>上标：X<sub>2</sub>，下标：O<sup>2</sup></p>
+<p><strong>缩写(同HTML的abbr标签)</strong></p>
+<blockquote>
+<p>即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启</p>
+</blockquote>
+<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+<h3 id="引用-Blockquotes"><a href="#引用-Blockquotes" class="headerlink" title="引用 Blockquotes"></a>引用 Blockquotes</h3><blockquote>
+<p>引用文本 Blockquotes</p>
+</blockquote>
+<p>引用的行内混合 Blockquotes</p>
+<blockquote>
+<p>引用：如果想要插入空白换行<code>即&lt;br /&gt;标签</code>，在插入处先键入两个以上的空格然后回车即可，<a href="https://www.mdeditor.com/" target="_blank" rel="noopener">普通链接</a>。</p>
+</blockquote>
+<h3 id="锚点与链接-Links"><a href="#锚点与链接-Links" class="headerlink" title="锚点与链接 Links"></a>锚点与链接 Links</h3><p><a href="https://www.mdeditor.com/" target="_blank" rel="noopener">普通链接</a><br><a href="https://www.mdeditor.com/" target="_blank" rel="noopener" title="普通链接带标题">普通链接带标题</a><br>直接链接：<a href="https://www.mdeditor.com" target="_blank" rel="noopener">https://www.mdeditor.com</a><br>[锚点链接][anchor-id]<br>[anchor-id]: <a href="https://www.mdeditor.com/" target="_blank" rel="noopener">https://www.mdeditor.com/</a><br><a href="mailto:test.test@gmail.com" target="_blank" rel="noopener">mailto:test.test@gmail.com</a><br>GFM a-tail link @pandao<br>邮箱地址自动链接 <a href="mailto:test.test@gmail.com" target="_blank" rel="noopener">test.test@gmail.com</a>  <a href="mailto:www@vip.qq.com" target="_blank" rel="noopener">www@vip.qq.com</a></p>
+<blockquote>
+<p>@pandao</p>
+</blockquote>
+<h3 id="多语言代码高亮-Codes"><a href="#多语言代码高亮-Codes" class="headerlink" title="多语言代码高亮 Codes"></a>多语言代码高亮 Codes</h3><h4 id="行内代码-Inline-code"><a href="#行内代码-Inline-code" class="headerlink" title="行内代码 Inline code"></a>行内代码 Inline code</h4><p>执行命令：<code>npm install marked</code></p>
+<h4 id="缩进风格"><a href="#缩进风格" class="headerlink" title="缩进风格"></a>缩进风格</h4><p>即缩进四个空格，也做为实现类似 <code>&lt;pre&gt;</code> 预格式化文本 ( Preformatted Text ) 的功能。</p>
+<pre><code>&lt;?php
+    echo &quot;Hello world!&quot;;
+?&gt;</code></pre><p>预格式化文本：</p>
+<pre><code>| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |</code></pre><h4 id="JS代码"><a href="#JS代码" class="headerlink" title="JS代码"></a>JS代码</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Hello world!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="HTML-代码-HTML-codes"><a href="#HTML-代码-HTML-codes" class="headerlink" title="HTML 代码 HTML codes"></a>HTML 代码 HTML codes</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mate</span> <span class="attr">charest</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"Editor.md, Markdown, Editor"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Hello world!<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">body</span>&#123;<span class="attribute">font-size</span>:<span class="number">14px</span>;<span class="attribute">color</span>:<span class="number">#444</span>;<span class="attribute">font-family</span>: <span class="string">"Microsoft Yahei"</span>, Tahoma, <span class="string">"Hiragino Sans GB"</span>, Arial;<span class="attribute">background</span>:<span class="number">#fff</span>;&#125;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">ul</span>&#123;<span class="attribute">list-style</span>: none;&#125;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">img</span>&#123;<span class="attribute">border</span>:none;<span class="attribute">vertical-align</span>: middle;&#125;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">"text-xxl"</span>&gt;</span>Hello world!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-green"</span>&gt;</span>Plain text<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="图片-Images"><a href="#图片-Images" class="headerlink" title="图片 Images"></a>图片 Images</h3><p>图片加链接 (Image + Link)：</p>
+<p><a href="https://www.mdeditor.com/images/logos/markdown.png" target="_blank" rel="noopener" title="markdown"><img src="https://www.mdeditor.com/images/logos/markdown.png" alt></a></p>
+<blockquote>
+<p>Follow your heart.</p>
+</blockquote>
+<hr>
+<h3 id="列表-Lists"><a href="#列表-Lists" class="headerlink" title="列表 Lists"></a>列表 Lists</h3><h4 id="无序列表（减号）Unordered-Lists"><a href="#无序列表（减号）Unordered-Lists" class="headerlink" title="无序列表（减号）Unordered Lists (-)"></a>无序列表（减号）Unordered Lists (-)</h4><ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul>
+<h4 id="无序列表（星号）Unordered-Lists"><a href="#无序列表（星号）Unordered-Lists" class="headerlink" title="无序列表（星号）Unordered Lists (*)"></a>无序列表（星号）Unordered Lists (*)</h4><ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul>
+<h4 id="无序列表（加号和嵌套）Unordered-Lists"><a href="#无序列表（加号和嵌套）Unordered-Lists" class="headerlink" title="无序列表（加号和嵌套）Unordered Lists (+)"></a>无序列表（加号和嵌套）Unordered Lists (+)</h4><ul>
+<li>列表一</li>
+<li>列表二<ul>
+<li>列表二-1</li>
+<li>列表二-2</li>
+<li>列表二-3</li>
+</ul>
+</li>
+<li>列表三<ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul>
+</li>
+</ul>
+<h4 id="有序列表-Ordered-Lists"><a href="#有序列表-Ordered-Lists" class="headerlink" title="有序列表 Ordered Lists (-)"></a>有序列表 Ordered Lists (-)</h4><ol>
+<li>第一行</li>
+<li>第二行</li>
+<li>第三行</li>
+</ol>
+<h4 id="GFM-task-list"><a href="#GFM-task-list" class="headerlink" title="GFM task list"></a>GFM task list</h4><ul>
+<li><input checked disabled type="checkbox"> GFM task list 1</li>
+<li><input checked disabled type="checkbox"> GFM task list 2</li>
+<li><input disabled type="checkbox"> GFM task list 3<ul>
+<li><input disabled type="checkbox"> GFM task list 3-1</li>
+<li><input disabled type="checkbox"> GFM task list 3-2</li>
+<li><input disabled type="checkbox"> GFM task list 3-3</li>
+</ul>
+</li>
+<li><input disabled type="checkbox"> GFM task list 4<ul>
+<li><input disabled type="checkbox"> GFM task list 4-1</li>
+<li><input disabled type="checkbox"> GFM task list 4-2</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="绘制表格-Tables"><a href="#绘制表格-Tables" class="headerlink" title="绘制表格 Tables"></a>绘制表格 Tables</h3><table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">价格</th>
+<th align="center">数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>计算机</td>
+<td align="right">$1600</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td align="right">$12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td align="right">$1</td>
+<td align="center">234</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Function name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>help()</code></td>
+<td>Display the help window.</td>
+</tr>
+<tr>
+<td><code>destroy()</code></td>
+<td><strong>Destroy your computer!</strong></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">Left-Aligned</th>
+<th align="center">Center Aligned</th>
+<th align="right">Right Aligned</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">col 3 is</td>
+<td align="center">some wordy text</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td align="left">col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td align="left">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th align="right">Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Computer</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td align="right">$1</td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="特殊符号-HTML-Entities-Codes"><a href="#特殊符号-HTML-Entities-Codes" class="headerlink" title="特殊符号 HTML Entities Codes"></a>特殊符号 HTML Entities Codes</h4><p>&copy; &amp;  &uml; &trade; &iexcl; &pound;<br>&amp; &lt; &gt; &yen; &euro; &reg; &plusmn; &para; &sect; &brvbar; &macr; &laquo; &middot;</p>
+<p>X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;</p>
+<p>18&ordm;C  &quot;  &apos;</p>
+<p>[========]</p>
+<h3 id="Emoji表情-smiley"><a href="#Emoji表情-smiley" class="headerlink" title="Emoji表情 :smiley:"></a>Emoji表情 :smiley:</h3><blockquote>
+<p>Blockquotes :star:</p>
+</blockquote>
+<h4 id="GFM-task-lists-amp-Emoji-amp-fontAwesome-icon-emoji-amp-editormd-logo-emoji-editormd-logo-5x"><a href="#GFM-task-lists-amp-Emoji-amp-fontAwesome-icon-emoji-amp-editormd-logo-emoji-editormd-logo-5x" class="headerlink" title="GFM task lists &amp; Emoji &amp; fontAwesome icon emoji &amp; editormd logo emoji :editormd-logo-5x:"></a>GFM task lists &amp; Emoji &amp; fontAwesome icon emoji &amp; editormd logo emoji :editormd-logo-5x:</h4><ul>
+<li><input checked disabled type="checkbox"> :smiley: @mentions, :smiley: #refs, <a href>links</a>, <strong>formatting</strong>, and <del>tags</del> supported :editormd-logo:;</li>
+<li><input checked disabled type="checkbox"> list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;</li>
+<li><input checked disabled type="checkbox"> [ ] :smiley: this is a complete item :smiley:;</li>
+<li><input disabled type="checkbox"> []this is an incomplete item <a href="#">test link</a> :fa-star: @pandao;</li>
+<li><input disabled type="checkbox"> [ ]this is an incomplete item :fa-star: :fa-gear:;<ul>
+<li><input disabled type="checkbox"> :smiley: this is an incomplete item <a href="#">test link</a> :fa-star: :fa-gear:;</li>
+<li><input disabled type="checkbox"> :smiley: this is  :fa-star: :fa-gear: an incomplete item <a href="#">test link</a>;</li>
+</ul>
+</li>
+</ul>
+<h4 id="反斜杠-Escape"><a href="#反斜杠-Escape" class="headerlink" title="反斜杠 Escape"></a>反斜杠 Escape</h4><p>*literal asterisks*</p>
+<p>[========]</p>
+<h3 id="科学公式-TeX-KaTeX"><a href="#科学公式-TeX-KaTeX" class="headerlink" title="科学公式 TeX(KaTeX)"></a>科学公式 TeX(KaTeX)</h3><p>$$E=mc^2$$</p>
+<p>行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。</p>
+<p>$$x &gt; y$$</p>
+<p>$$(\sqrt{3x-1}+(1+x)^2)$$</p>
+<p>$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$</p>
+<p>多行公式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\displaystyle</span><br><span class="line">\left( \sum\_&#123;k=1&#125;^n a\_k b\_k \right)^2</span><br><span class="line">\leq</span><br><span class="line">\left( \sum\_&#123;k=1&#125;^n a\_k^2 \right)</span><br><span class="line">\left( \sum\_&#123;k=1&#125;^n b\_k^2 \right)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\displaystyle</span><br><span class="line">    \frac&#123;1&#125;&#123;</span><br><span class="line">        \Bigl(\sqrt&#123;\phi \sqrt&#123;5&#125;&#125;-\phi\Bigr) e^&#123;</span><br><span class="line">        \frac25 \pi&#125;&#125; = 1+\frac&#123;e^&#123;-2\pi&#125;&#125; &#123;1+\frac&#123;e^&#123;-4\pi&#125;&#125; &#123;</span><br><span class="line">        1+\frac&#123;e^&#123;-6\pi&#125;&#125;</span><br><span class="line">        &#123;1+\frac&#123;e^&#123;-8\pi&#125;&#125;</span><br><span class="line">         &#123;1+\cdots&#125; &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">f(x) = \int_&#123;-\infty&#125;^\infty</span><br><span class="line">    \hat f(\xi)\,e^&#123;2 \pi i \xi x&#125;</span><br><span class="line">    \,d\xi</span><br></pre></td></tr></table></figure>
+<h3 id="分页符-Page-break"><a href="#分页符-Page-break" class="headerlink" title="分页符 Page break"></a>分页符 Page break</h3><blockquote>
+<p>Print Test: Ctrl + P</p>
+</blockquote>
+<p>[========]</p>
+<h3 id="绘制流程图-Flowchart"><a href="#绘制流程图-Flowchart" class="headerlink" title="绘制流程图 Flowchart"></a>绘制流程图 Flowchart</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st=&gt;start: 用户登陆</span><br><span class="line">op=&gt;operation: 登陆操作</span><br><span class="line">cond=&gt;condition: 登陆成功 Yes or No?</span><br><span class="line">e=&gt;end: 进入后台</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+<p>[========]</p>
+<h3 id="绘制序列图-Sequence-Diagram"><a href="#绘制序列图-Sequence-Diagram" class="headerlink" title="绘制序列图 Sequence Diagram"></a>绘制序列图 Sequence Diagram</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Andrew-&gt;China: Says Hello</span><br><span class="line">Note right of China: China thinks\nabout it</span><br><span class="line">China--&gt;Andrew: How are you?</span><br><span class="line">Andrew-&gt;&gt;China: I am good thanks!</span><br></pre></td></tr></table></figure>
+<h3 id="End"><a href="#End" class="headerlink" title="End"></a>End</h3>]]></content>
       <categories>
         <category>模板</category>
       </categories>
@@ -34,24 +466,49 @@
     <title>GitHub搭建hexo博客</title>
     <url>/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="1-首先，得在GitHub上有个自己的仓库"><a href="#1-首先，得在GitHub上有个自己的仓库" class="headerlink" title="1.首先，得在GitHub上有个自己的仓库"></a><strong>1.首先，得在GitHub上有个自己的仓库</strong></h1><p>这个默认都有点了，没有的百度网上很多教程如何创建GitHub，并创建GitHub.io库</p><a id="more"></a>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/1.png" alt> </p>
 <h1 id="2-环境搭建"><a href="#2-环境搭建" class="headerlink" title="2.环境搭建"></a>2.环境搭建</h1><h2 id="2-1-首先，我们需要下载node-js和git-安装基本上就是默认安装即可。"><a href="#2-1-首先，我们需要下载node-js和git-安装基本上就是默认安装即可。" class="headerlink" title="　2.1 首先，我们需要下载node.js和git.安装基本上就是默认安装即可。"></a>　<strong>2.1 首先，我们需要下载<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js</a>和<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a>.安装基本上就是默认安装即可。</strong></h2><p> 安装，完成之后，打开命令窗口（Win+R，输入CMD，回车），分别输入node -v, npm -v, git -version, 如果都能像下图一样返回版本号就说明安装好了。 </p>
-<p><img src="../../../../images/1228928-20171210164556943-1814058239.png" alt="img"></p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/2.png" alt> </p>
 <p> 　如果在这里不可以操作git，说明在安装时没有更改路径，设置为windows环境下也可以操作，不过没有关系，只需要将git的安装路径添加到环境变量中就可以在windows下操作，或者我们可以运行git bash，在这里查看git的版本号（安装git之后一定会生成git bash）， </p>
-<p><img src="../../../../images/1228928-20171210165330443-675669731.png" alt="img"></p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/3.png" alt> </p>
 <h2 id="2-2-SSH授权"><a href="#2-2-SSH授权" class="headerlink" title="2.2 SSH授权"></a><strong>2.2 SSH授权</strong></h2><p> 打开git bash，输入ssh-keygen -t rsa, 接着回车三下 </p>
-<p><img src="../../../../images/1228928-20171210170029599-1633314112.png" alt="img"></p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/ssh%E6%8E%88%E6%9D%83.png" alt> </p>
 <p> 这样就会在C盘用户目录下生成id_rsa和id_rsa.pub这两个文件，前者是密钥，后者是公钥，用记事本打开id_rsa.pub，复制其中的全部内容，添加到GitHub上，这样本地的id_rsa密钥就可以和GitHub上的id_rsa.pub公钥进行配对，授权成功。 </p>
-<p><img src="../../../../images/1228928-20171210171603958-1209919722.jpg" alt="img"></p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/4.jpg" alt> </p>
 <p> 　SSH key添加之后，就可以在本机git bash中进行测试，输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>进行测试， </p>
-<p><img src="../../../../images/1228928-20171210171822615-599279373.png" alt="img"></p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/5.png" alt> </p>
 <p> 返回Hi username ！You’ve successfully ……说明你已经成功啦！ </p>
 <h1 id="3-设置本地博客的配置"><a href="#3-设置本地博客的配置" class="headerlink" title="3. 设置本地博客的配置"></a><strong>3. 设置本地博客的配置</strong></h1><h2 id="3-1-安装hexo"><a href="#3-1-安装hexo" class="headerlink" title="3.1 安装hexo"></a><strong>3.1 安装hexo</strong></h2><p> 在任意一个地方新建一个文件夹，在git bash中进入这个文件夹，比如<strong>cd /d/Files/hexo/</strong>（之后安装的内容会保存在这个文件夹内），输入npm install -g hexo安装hexo即可，如下图（我已经安装过了，就不再安装了） </p>
-<p><img src="../../../../images/1228928-20171210182333536-1195927792-1572422355814.png" alt="img"></p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/6.png" alt> </p>
 <p>　　注意，在回车之后，可能会出现一行WARN的警告语句，不用管它，什么都不要按，等着。。。过一段时间如果出现hexo版本号之类的语句就代表差不多了。</p>
 <p>　　然后输入<strong>npm install hexo –save</strong>这个时候你会看到命令行出现了一堆白字，紧接着输入<strong>hexo v</strong>查看是否安装成功</p>
-]]></content>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/7.png" alt> </p>
+<h2 id="3-2-初始化hexo"><a href="#3-2-初始化hexo" class="headerlink" title="3.2 初始化hexo"></a><strong>3.2 初始化hexo</strong></h2><p> 　　继续输入<strong>hexo init</strong>实现初始化 </p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/8.png" alt> </p>
+<p> 下载好了，再输入<strong>hexo s</strong> </p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/9.png" alt> </p>
+<p> 这时候我们就可以打开浏览器了，在地址栏中输入<a href="http://localhost:4000/，我们就可以看到如下图的界面，，我们的博客建成功啦！！！" target="_blank" rel="noopener">http://localhost:4000/，我们就可以看到如下图的界面，，我们的博客建成功啦！！！</a> </p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/hexo.png" alt> </p>
+<p> 我们可以去看一下我们的源码的位置，就在之前新建的那个文件夹里，在source-&gt;_posts文件夹下，有一篇helloworld的初始化文章，如果想要添加新的文章，可以在命令行输入hexo new ‘filename’,就会生成一个新的.md文件，对它编辑就可以了。 </p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/10.png" alt> </p>
+<h2 id="3-3-上传项目"><a href="#3-3-上传项目" class="headerlink" title="　　3.3 上传项目"></a>　　<strong>3.3 上传项目</strong></h2><p>　　先打开配置文档_config.yml，对它做如下修改，repository后面的内容是 <strong><a href="mailto:git@gitbub.com" target="_blank" rel="noopener">git@gitbub.com</a>:username/库地址</strong> 的形式</p>
+<p>　　注意：type、repository、branch冒号的后面都有一个空格</p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/11.png" alt> </p>
+<p>部署好之后，我们就可以上传我们的代码咯</p>
+<p>　　回到命令行窗口，输入<strong>npm install hexo-deployer-git –save,</strong></p>
+<p>　　再输入<strong>hexo g，</strong>然后再<strong>hexo d</strong>，就可以将我们public里面的代码上传咯，在GitHub上可以看到我们上传的代码。这样别人也可以通过域名访问我们博客了。在地址栏输入http://域名就可以访问</p>
+<h1 id="4-更改主题"><a href="#4-更改主题" class="headerlink" title="4. 更改主题"></a><strong>4. 更改主题</strong></h1><p> 在hexo官网上下载自己喜欢的theme，点击图片可以预览主题，点击图片下面的文字就可以打开下载链接，</p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/12.png" alt="下载主题"> </p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/13.png" alt="GitHub链接"> </p>
+<p> 　复制源码的url，在git hash 命令窗口下载主题，输入<strong>git clone url</strong>，注意得手动粘贴，Ctrl+v无效 </p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/13.png" alt="下载"> </p>
+<p> 接着，将配置文件中的theme改为新的主题的名字，记住一定要将下载下来的文件夹放到themes文件夹里！ </p>
+<p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/14.jpg" alt> </p>
+<p> 差不过就这么多啦，接着就可以根据主题的使用文档进行博客的修改，改成自己喜欢的样子！ </p>
+<h1 id="参考链接：-https-www-cnblogs-com-trista222-p-8017300-html"><a href="#参考链接：-https-www-cnblogs-com-trista222-p-8017300-html" class="headerlink" title="参考链接： https://www.cnblogs.com/trista222/p/8017300.html"></a>参考链接： <a href="https://www.cnblogs.com/trista222/p/8017300.html" target="_blank" rel="noopener">https://www.cnblogs.com/trista222/p/8017300.html</a></h1>]]></content>
       <categories>
         <category>经验分享</category>
+        <category>教程技术</category>
       </categories>
       <tags>
         <tag>Github</tag>
