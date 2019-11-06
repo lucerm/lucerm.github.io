@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>next主题修改</title>
+    <url>/2019/11/06/next%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>hexo插入图片</title>
     <url>/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<p> 1.把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true（如果没有就不用管了） </p><a id="more"></a>
@@ -487,7 +492,7 @@ YellowGreen    #9ACD32    rgb(154, 205, 50)
 <p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/8.png" alt> </p>
 <p> 下载好了，再输入<strong>hexo s</strong> </p>
 <p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/9.png" alt> </p>
-<p> 这时候我们就可以打开浏览器了，在地址栏中输入<a href="http://localhost:4000/，我们就可以看到如下图的界面，，我们的博客建成功啦！！！" target="_blank" rel="noopener">http://localhost:4000/，我们就可以看到如下图的界面，，我们的博客建成功啦！！！</a> </p>
+<p> 这时候我们就可以打开浏览器了，在地址栏中输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>    ，我们就可以看到如下图的界面，，我们的博客建成功啦！！！ </p>
 <p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/hexo.png" alt> </p>
 <p> 我们可以去看一下我们的源码的位置，就在之前新建的那个文件夹里，在source-&gt;_posts文件夹下，有一篇helloworld的初始化文章，如果想要添加新的文章，可以在命令行输入hexo new ‘filename’,就会生成一个新的.md文件，对它编辑就可以了。 </p>
 <p> <img src="/2019/11/03/GitHub%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/10.png" alt> </p>
