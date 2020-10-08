@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>PVE挂载物理硬盘</title>
+    <url>/2019/12/04/PVE%E6%8C%82%E8%BD%BD%E7%89%A9%E7%90%86%E7%A1%AC%E7%9B%98/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>git--versiongit不是内部或外部命令</title>
+    <url>/2019/12/04/git-versiongit%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>前缀表达式、中缀表达式和后缀表达式</title>
     <url>/2019/11/06/%E5%89%8D%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%81%E4%B8%AD%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%90%8E%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
     <content><![CDATA[<h2 id="前缀、中缀、后缀表达式"><a href="#前缀、中缀、后缀表达式" class="headerlink" title="前缀、中缀、后缀表达式"></a>前缀、中缀、后缀表达式</h2><p>前缀、中缀、后缀表达式是对表达式的不同记法，其区别在于<strong>运算符相对于操作数的位置不同</strong>，前缀表达式的运算符位于操作数之前，中缀和后缀同理</p><a id="more"></a>
