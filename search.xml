@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试gitee</title>
-    <url>/2020/10/09/%E6%B5%8B%E8%AF%95gitee/</url>
-    <content><![CDATA[<h1 id="测试意一下怕刷的挥洒"><a href="#测试意一下怕刷的挥洒" class="headerlink" title="测试意一下怕刷的挥洒"></a>测试意一下怕刷的挥洒</h1><p>测试</p><p>增加了信息</p>]]></content>
-  </entry>
-  <entry>
     <title>hexo同时部署到GitHub、gitee</title>
     <url>/2020/10/09/hexo%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E3%80%81gitee/</url>
     <content><![CDATA[<p><img src="/2020/10/09/hexo%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E3%80%81gitee/%E4%B8%8A%E4%BC%A0%E4%BD%8D%E7%BD%AE%E8%AE%BE%E7%BD%AE.png" alt> </p>]]></content>
@@ -90,8 +85,6 @@
 
 <p> 最后，来看一下效果： </p>
 <p> <img src="/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/5.png" alt> </p>
-<p> <img src="https://gitee.com/lucerm/lucerm/raw/master/images/5.png" alt="WAI"> </p>
-<p> <img src="https://gitee.com/lucerm/lucerm/raw/master/images/test.png" alt="WAI">  </p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% dplayer <span class="string">"url=http://home.ustc.edu.cn/~mmmwhy/GEM.mp4"</span>  <span class="string">"pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"</span> <span class="string">"loop=yes"</span> <span class="string">"theme=#FADFA3"</span> <span class="string">"autoplay=false"</span> <span class="string">"token=tokendemo"</span> %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>  &lt;img src=”hexo插入图片/5.png”,alt=”first”, width=600 height=300&gt;  </p>
