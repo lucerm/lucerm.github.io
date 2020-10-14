@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2020年秋季itx主机推荐配置</title>
+    <url>/2020/10/10/2020%E5%B9%B4%E7%A7%8B%E5%AD%A3itx%E4%B8%BB%E6%9C%BA%E6%8E%A8%E8%8D%90%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p><img src="/2020/10/10/2020%E5%B9%B4%E7%A7%8B%E5%AD%A3itx%E4%B8%BB%E6%9C%BA%E6%8E%A8%E8%8D%90%E9%85%8D%E7%BD%AE/itx%E6%9C%BA%E7%AE%B1-%E5%8A%9E%E5%85%AC%E7%BD%91%E6%B8%B8%E9%85%8D%E7%BD%AE.png" alt="itx机箱-办公网游配置"></p><p><img src="/2020/10/10/2020%E5%B9%B4%E7%A7%8B%E5%AD%A3itx%E4%B8%BB%E6%9C%BA%E6%8E%A8%E8%8D%90%E9%85%8D%E7%BD%AE/itx%E6%9C%BA%E7%AE%B1-%E6%80%A7%E4%BB%B7%E6%AF%94%E6%B8%B8%E6%88%8F%E9%85%8D%E7%BD%AE.png" alt="itx机箱-性价比游戏配置"></p>]]></content>
+  </entry>
+  <entry>
     <title>hexo同时部署到GitHub、gitee</title>
     <url>/2020/10/09/hexo%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E3%80%81gitee/</url>
-    <content><![CDATA[<p><img src="/2020/10/09/hexo%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E3%80%81gitee/%E4%B8%8A%E4%BC%A0%E4%BD%8D%E7%BD%AE%E8%AE%BE%E7%BD%AE.png" alt> </p>]]></content>
+    <content><![CDATA[<p><img src="/2020/10/09/hexo%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E3%80%81gitee/%E4%B8%8A%E4%BC%A0%E4%BD%8D%E7%BD%AE%E8%AE%BE%E7%BD%AE.png" alt> </p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  &lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;</span><br><span class="line"> &lt;iframe  src=&quot;嵌入代码的地址&quot; scrolling=&quot;no&quot; border=&quot;0&quot;  frameborder=&quot;no&quot; </span><br><span class="line"> framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%;  </span><br><span class="line">height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>经验分享</category>
         <category>教程技术</category>
@@ -83,11 +88,14 @@
 <p>插入格式：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![](5.png)</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![](./文件名/5.png)</span><br></pre></td></tr></table></figure>
+
 <p> 最后，来看一下效果： </p>
-<p> <img src="/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/5.png" alt> </p>
+<p> <img src="/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/5.png" alt="5"> </p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% dplayer <span class="string">"url=http://home.ustc.edu.cn/~mmmwhy/GEM.mp4"</span>  <span class="string">"pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"</span> <span class="string">"loop=yes"</span> <span class="string">"theme=#FADFA3"</span> <span class="string">"autoplay=false"</span> <span class="string">"token=tokendemo"</span> %&#125;</span><br></pre></td></tr></table></figure>
 
-<p>  &lt;img src=”hexo插入图片/5.png”,alt=”first”, width=600 height=300&gt;  </p>
+
+<p>  <img src="/2019/11/03/hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/2.png" alt="2"></p>
 ]]></content>
       <categories>
         <category>经验分享</category>
@@ -127,7 +135,6 @@
 
 
 <table><tr><td bgcolor="Coral"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="https://f.51240.com/file/zaixianwangyebianji/kindeditor-4.1.7/plugins/emoticons/images/13.gif" border="0" alt>w我就<span style="font-size:14px;">是我<span style="font-size:18px;">我<span style="font-size:24px;">我</span></span></span></td></tr></table>
-
 
 <p>颜色名    十六进制颜色值    颜色</p>
 <table><tr><td bgcolor="AliceBlue"> AliceBlue #F0F8FF    rgb(240, 248, 255)</td></tr></table>
