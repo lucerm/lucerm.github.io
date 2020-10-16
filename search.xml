@@ -44,7 +44,87 @@
   <entry>
     <title>hexo同时部署到GitHub、gitee</title>
     <url>/2020/10/09/hexo%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E3%80%81gitee/</url>
-    <content><![CDATA[<p><img src="/2020/10/09/hexo%E5%90%8C%E6%97%B6%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E3%80%81gitee/%E4%B8%8A%E4%BC%A0%E4%BD%8D%E7%BD%AE%E8%AE%BE%E7%BD%AE.png" alt> </p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  &lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;</span><br><span class="line"> &lt;iframe  src=&quot;嵌入代码的地址&quot; scrolling=&quot;no&quot; border=&quot;0&quot;  frameborder=&quot;no&quot; </span><br><span class="line"> framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%;  </span><br><span class="line">height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    <content><![CDATA[<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>得益于Hexo, jekyll这类轻量静态博客框架的流行与各大代码托管平台提供的Pages服务。如今，建立个人博客的门槛已经极大的降低。然而，<strong>托管于Github上的静态Blog在国内拥有原生的缺陷</strong>，即<strong>访问速度的缓慢</strong>。此时将Hexo Blog<strong>同步托管到Github与支持Pages服务的国内代码托管平台</strong>，例如码云(Gitee)、 Coding，不失为一种有效的解决方法。这篇文章主要指引您将Hexo同步(时)部署至Github与码云，如果可能，也试图帮助您在Github和码云(Gitee)上搭建一个Hexo个人博客。例如：<a href="https://lucerm.gitee.io/" target="_blank" rel="noopener">lucerm的博客(码云)</a>, <a href="https://lucerm.github.io/" target="_blank" rel="noopener">lucerm的博客(Github)</a>。</p><a id="more"></a>
+<h1 id="您需要准备"><a href="#您需要准备" class="headerlink" title="您需要准备"></a>您需要准备</h1><ul>
+<li><p>✅一个配置完成的Hexo</p>
+<blockquote>
+<p>❔您还没有配置好本地的Hexo?<br>您可以访问<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">这里</a>来学习如何安装和配置Hexo框架</p>
+</blockquote>
+</li>
+<li><p>✅Github账号 (<em><a href="https://github.com/join?source=header-home" target="_blank" rel="noopener">还没有注册?</a></em>)</p>
+</li>
+<li><p>✅码云(Gitee)账号 (<em><a href="https://gitee.com/signup" target="_blank" rel="noopener">还没有注册?</a></em>)</p>
+<blockquote>
+<p>❓为什么不选择Coding作为托管平台<br>由于使用Coding Pages服务需要进行<strong>实名认证</strong><br>如果您不介意，可以参照<a href="https://help.coding.net/docs/devops/cd/static-website.html" target="_blank" rel="noopener">这里</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h1><h2 id="配置Github-Pages"><a href="#配置Github-Pages" class="headerlink" title="配置Github Pages"></a>配置Github Pages</h2><ol>
+<li><p>登录您的Github</p>
+</li>
+<li><p><a href="https://github.com/new" target="_blank" rel="noopener">新建</a>一个名为<code>您的Github用户名.github.io</code>的仓库 (<em><a href="https://help.github.com/cn/github/working-with-github-pages/creating-a-github-pages-site" target="_blank" rel="noopener">详细步骤</a></em>)</p>
+</li>
+<li><p>配置SSH密钥</p>
+<blockquote>
+<p>❗当然，您也可以选择不配置SSH密钥而使用HTTPS连接来部署Blog，副作用是<strong>每次</strong>提交都需要输入托管网站的账号密码。由于我们的目标是将Blog同步托管到两个网站上，这将会导致您提交时需要输入<strong>4次</strong>账户信息。<br>❕请不要勉强自己，如果您感到吃力，可以跳过这一步骤</p>
+</blockquote>
+<ul>
+<li>生成新的SSH Key (<em><a href="https://help.github.com/cn/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">详细步骤</a></em>)<br><code>ssh-keygen -t rsa -b 4096 -C &quot;您的Github邮箱地址&quot;</code></li>
+<li>将SSH Key(位于<code>~/.ssh/id_rsa.pub</code>)添加到Github账户中 (<em><a href="https://help.github.com/cn/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account" target="_blank" rel="noopener">详细步骤</a></em>)</li>
+</ul>
+</li>
+<li><p>这一阶段的工作告一段落⭕</p>
+</li>
+</ol>
+<h2 id="配置码云-Gitee-Pages"><a href="#配置码云-Gitee-Pages" class="headerlink" title="配置码云(Gitee) Pages"></a>配置码云(Gitee) Pages</h2><ol>
+<li>登录您的码云(Gitee)并<strong>绑定手机号码</strong>以便启用Pages服务</li>
+</ol>
+<blockquote>
+<p>❗绑定手机账号是开启Gitee Pages的必要条件</p>
+</blockquote>
+<ol>
+<li><p>新建一个名为<code>您的Gitee用户名</code>的Gitee仓库 (<em><a href="https://gitee.com/help/articles/4136" target="_blank" rel="noopener">详细步骤</a></em>)</p>
+<blockquote>
+<p>❓为什么仓库名需要为<code>我的Gitee用户名</code><br>如果您希望获得一个不带二级目录的Pages首页访问地址(形如<code>name.gitee.io</code>)，就需要这么做，否则，您的Gitee Pages首页访问地址将形如<code>name.gitee.io/my_blog</code></p>
+</blockquote>
+</li>
+<li><p>在<a href="https://gitee.com/profile/sshkeys" target="_blank" rel="noopener">这里</a>添加您在[配置SSH密钥]章节生成的SSH密钥到您的Gitee (<em><a href="https://gitee.com/help/articles/4191#article-header0" target="_blank" rel="noopener">详细步骤</a></em>)</p>
+<blockquote>
+<p>❕如果您跳过了[配置SSH密钥]这一章节，也请您跳过这里</p>
+</blockquote>
+</li>
+<li><p>这一阶段的工作告一段落⭕</p>
+</li>
+</ol>
+<h2 id="配置Hexo"><a href="#配置Hexo" class="headerlink" title="配置Hexo"></a>配置Hexo</h2><ol>
+<li>打开您的<code>_config.yml</code>文件并在文件底部找到<code>deploy</code>对象</li>
+<li>将仓库地址加入<code>deploy</code>对象</li>
+</ol>
+<blockquote>
+<p>❕<code>{yourname}</code> 是您在相应网站的用户名</p>
+</blockquote>
+<ul>
+<li>🚏如果您配置了SSH密钥</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">'git'</span></span><br><span class="line"><span class="attr">  repo:</span> </span><br><span class="line"><span class="attr">    github:</span> <span class="string">git@github.com:&#123;yourname&#125;/&#123;yourname&#125;.github.io.git</span></span><br><span class="line"><span class="attr">    gitee:</span> <span class="string">git@gitee.com:&#123;yourname&#125;/&#123;yourname&#125;.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>🚏如果您没有配置SSH密钥(跳过了[配置SSH密钥]章节)</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">'git'</span></span><br><span class="line"><span class="attr">  repo:</span> </span><br><span class="line"><span class="attr">    github:</span> <span class="attr">https://github.com/&#123;yakuback&#125;/&#123;yakuback&#125;.github.io.git</span></span><br><span class="line"><span class="attr">    gitee:</span> <span class="attr">https://gitee.com/&#123;yakuback&#125;/&#123;yakuback&#125;.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>打开您的码云仓库，选择服务-Gitee Pages并开启服务</li>
+<li>这一阶段的工作告一段落⭕</li>
+</ol>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>至此，您已经完成了将Hexo的静态网站同步部署至Github与码云(Gitee)的全部步骤。<br>一如既往，让我们通过</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g	<span class="comment"># 生成页面</span></span><br><span class="line">hexo d	<span class="comment"># 部署页面</span></span><br></pre></td></tr></table></figure>
+
+<p>来做一收尾吧！</p>
+<blockquote>
+<p>❗需要注意的是，码云并不会主动更新您的网站，在您部署页面后，需要在码云仓库手动更新</p>
+</blockquote>
+]]></content>
       <categories>
         <category>经验分享</category>
         <category>教程技术</category>
