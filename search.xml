@@ -3,7 +3,13 @@
   <entry>
     <title>蓝桥杯嵌入式</title>
     <url>/2020/10/16/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B5%8C%E5%85%A5%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="LCD高亮显示"><a href="#LCD高亮显示" class="headerlink" title="LCD高亮显示"></a>LCD高亮显示</h1><p>高亮行</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(lcd_gaoliang==<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		 LCD_SetTextColor(Red);</span><br><span class="line">	&#125;</span><br><span class="line">	LCD_ClearLine(Line5);</span><br><span class="line">	<span class="built_in">sprintf</span>(str,<span class="string">"gaoliang"</span>);</span><br><span class="line">	LCD_DisplayStringLine(Line5,str);</span><br><span class="line">	LCD_SetTextColor(White);</span><br></pre></td></tr></table></figure><a id="more"></a>
+    <content><![CDATA[<h1 id="LCD"><a href="#LCD" class="headerlink" title="LCD"></a>LCD</h1><div class="j_10086_iotapp" data-host="https://open.iot.10086.cn" data-view="ab69f3f39221a4bcd57c03bfdde5a3c0" data-pid="372449" data-appid="89381" style="height:300px;width:500px;"></div><script src="//open.iot.10086.cn/static/files/develop/appembed2.js?v=3.0"></script><p>高亮行</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(lcd_gaoliang==<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		 LCD_SetTextColor(Red);</span><br><span class="line">	&#125;</span><br><span class="line">	LCD_ClearLine(Line5);</span><br><span class="line">	<span class="built_in">sprintf</span>(str,<span class="string">"gaoliang"</span>);</span><br><span class="line">	LCD_DisplayStringLine(Line5,str);</span><br><span class="line">	LCD_SetTextColor(White);</span><br></pre></td></tr></table></figure><a id="more"></a>
+
+
+
+
+
+
 
 
 
@@ -131,8 +137,8 @@
       </categories>
       <tags>
         <tag>Github</tag>
-        <tag>博客</tag>
         <tag>gitee</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
